@@ -1,0 +1,540 @@
+body,html{
+    margin:auto;
+    width:1000px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:0;
+    right:0;
+    background-image: url(../Image/tatami.jpg);
+}
+#cover{
+    opacity:0;
+    pointer-events: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    background-color:rgba(255,255,255,0.5);
+    left: 0;
+    z-index: 1000;
+}
+#cover .back{
+    width:20%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#cover [class*="canvas"]{
+    width:50%;
+    position:absolute;
+    left:30%;
+    top:50%;
+    transform: translateY(-50%);
+}
+#cover .canvas1{
+    
+    width:40%;
+
+    top:50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+[id*="wrap"]{
+    background-repeat: repeat;
+    background-size: 10%;
+    top:120px;
+    display:block;
+    width:90%;
+    height:100%;
+    min-height: 1100px;
+    min-width: 900px;
+    position: absolute;
+    left:50px;
+    opacity: 0;
+    margin:0 auto;
+    transition: 0.7s;
+    font-family: serif; 
+    font-size:20px;
+} 
+#tab .copyright{
+    position: absolute;
+    width:900px;
+    text-align: center;
+    
+    bottom:-450px;
+    left:-450px;
+    color:rgb(239, 239, 239);
+}
+/*ホーム画面のｃｓｓ*/
+#wrap1 div{
+    max-height: 1100px;
+    overflow: hidden;
+}
+#wrap1 .Darkred{
+    font-size: 70px;
+    color:rgb(155,31,31);
+    font-weight: 200;
+}
+#wrap1 #gakuseikai{
+    position:absolute;
+    left:300px;
+    bottom:90px;
+    width:300px;
+    
+}
+#wrap1 #gakuseikai p{
+    margin: 0;
+    font-family:sans-serif;
+    font-size: 28px;
+    display:inline-block;
+    font-weight:700;
+    
+}
+#wrap1 #robokon{
+    position: absolute;
+    bottom:95px;
+    right:0;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: center;
+}
+#wrap1 #robokon  img:hover{
+    filter: brightness(70%);
+}
+#wrap1 #robokon p{
+    margin: 0;
+    
+}
+#wrap1 #twitter{
+    position: absolute;
+    bottom:116px;
+    width:300px;
+    text-align: center;
+}
+#wrap1 #twitter p{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    font-family: sans-serif;
+}
+#wrap1 #twitter a img {
+    width:280px;
+    
+}
+#wrap1 #twitter a img:hover{
+    filter: brightness(70%);
+}
+.HomePage_btn{
+    z-index: 10;
+}
+.HomePage_btn img:hover{
+    filter: brightness(70%);
+}
+#wrap1{
+    background-image: url(../Image/fall.png);
+    max-height:1100px;
+}
+
+#wrap1 .logo-parts{
+    width:100%;
+    height:700px;
+    padding-left: 60px;
+}
+#wrap1 #name{
+    position:relative;
+    top:20px;
+}
+#wrap1 .logo-parts .logo{
+    transform:scale(0.8);
+    position:absolute;
+    top:30px;
+}
+#wrap1 .logo-parts .logo[id="move"]{
+    animation:spin 40s infinite linear forwards;
+}
+@keyframes spin{
+    from{
+        transform: scale(0.8) rotateZ(0);
+    }
+    to{
+        transform: scale(0.8)rotateZ(360deg);
+    }
+}
+#wrap1 h2{
+    text-align:center;
+    line-height: 40px;
+    font-size:60px;
+}
+#wrap1 #theme{
+    font-family: fantasy;
+    position:relative;
+    top:-150px;
+}
+#wrap1 div .update{
+    position: absolute;
+    width:100%;
+    bottom:30px;
+    vertical-align: middle;
+    background-color: rgb(168, 47, 47);
+}
+#wrap1 div .update p{
+    color:white;
+    animation: move-to 8s infinite linear;
+    margin: 0;
+}
+@keyframes move-to{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform: translateX(-40%);
+    }
+}
+/*ホーム画面のｃｓｓ終わり*/
+/*高専祭についてのｃｓｓ*/
+#wrap2{
+    background-image: url(../Image/winter.png);
+    text-align: center;
+    height:1100px;
+}
+#wrap2 div .first_greet{
+    position:relative;
+    left: 50px;
+    text-align: left;
+    width:800px;
+    position:relative;
+    font-size: 26px;
+    margin-bottom: 80px;
+}
+#wrap2 div .theme{
+    color:rgb(165,39,43);
+    font-weight: 900;
+}
+#wrap2 div h1:first-child{
+    font-family:cursive;
+}
+#wrap2 div .contents{
+    position: absolute;
+    opacity:0;
+    transition-duration: 0.5s;
+}
+#wrap2 div .contents.\0031{
+    opacity: 1;
+}
+#wrap2 div .contents p{
+    font-size: 29px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#wrap2 div h2{
+    line-height: 10px;
+    font-family: cursive;
+}
+#wrap2 div h3{
+    font-family: cursive;
+    line-height: 10px;
+}
+#wrap2 div img{
+    position: absolute;
+    width:150px;
+    bottom: 200px;;
+}
+#wrap2 div img:hover{
+    filter: brightness(70%);
+}
+#wrap2 div .back{
+    left:20px;
+}
+#wrap2 div .next{
+    right:20px;
+}
+#wrap2 div .call{
+    position: absolute;
+    bottom:0;
+}
+#wrap2 div .call p{
+    margin:0 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size:25px;
+}
+/*高専祭についてのｃｓｓ終わり*/
+/*メイン企画のｃｓｓ*/
+#wrap3{
+    background-image: url(../Image/rain.png);
+    background-size: 10%;
+    height:1000px;
+}
+#wrap3 .introduction{
+    position: absolute;
+    top:550px;
+    width:100%;
+}
+#wrap3 .introduction p{
+    text-align: center;
+    line-height:25px;
+    left:50%;
+    font-size: 30px;
+}
+#wrap3 div img{
+    top:10px;
+    width:400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#wrap3 div h2{
+    position: absolute;
+    top:650px;
+    left: 330px;
+    font-family: sans-serif;
+}
+#wrap3 div video{
+    
+}
+/*メイン企画のｃｓｓ終わり*/
+/*会場案内のｃｓｓ*/
+#wrap4{
+    background-image: url(../Image/spring.png);
+    height:1000px;
+}
+#wrap4 div{
+    text-align: center;
+}
+#wrap4 div p{
+    font-size: 40px;
+}
+#wrap4 div .mapcanvas{
+    width:90%;
+    position:absolute;
+    left:120px;
+    top:300px;
+}
+#wrap4 div img{
+    width:20%;
+    position: absolute;
+}
+#wrap4 div .canvas1{
+    left: 0;
+}
+#wrap4 div .canvas2{
+    left:175px;
+}
+#wrap4 div .canvas3{
+    left:350px;
+}
+#wrap4 div .canvas4{
+    left:525px;
+}
+#wrap4 div .canvas5{
+    left: 700px;
+}
+
+/*会場案内のｃｓｓ終わり*/
+/*アクセスについてのｃｓｓ*/
+#wrap5{
+    background-image: url(../Image/summer.png);
+    height:1500px;
+}
+#wrap5 div .time img{
+    width:800px;
+    position: absolute;
+    bottom:50px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#wrap5 div b{
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+    line-height: 50px;
+}
+#wrap5 div h2{
+    position: relative;
+    left:20px;
+    font-size: 45px;
+    line-height: 25px;
+    font-family: serif;
+} #wrap5 div h2::first-letter{
+    font-size: 55px;
+    color:rgb(165,39,43);
+}
+#wrap5 div p{
+    position:relative;
+    font-family:serif;
+    font-size: 24px;
+    line-height: 10px;
+    left:50px;
+    width:800px;
+}
+#wrap5 div p[class="list"]{
+    color:rgb(165,39,43);
+    left:20px;
+}
+#wrap5 div b{
+    color:rgb(219,90,10);
+}
+#wrap5 .contents{
+    line-height: 45px;
+}
+#wrap5 .blue{
+    width:100px;
+    background-color:rgba(57,101,173,0.8);
+    color:white;
+}
+#wrap5 .red{
+    background-color:rgba(219,37,46,0.8);
+    color:white;
+}
+/*アクセスについてのｃｓｓ終わり*/
+[id*="wrap"]>div{
+    position: absolute;
+    top:8px;
+    left:8px;
+    width:98%;
+    min-width: 780px;
+    height:98%;
+    min-height: 980px;
+    background-image: url(../Image/wasi.png);
+}
+#menu{
+    width:1000px;
+    height:120px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:0 auto;
+    opacity:0;
+    display:block;
+    transition:0.7s;
+    z-index: 100;
+    pointer-events: none;
+}
+#menu li{
+    width:19%;
+    height:100%;
+    display: inline-block;
+    text-align: center;
+}
+#menu li>[class*="tab"]{
+    top:0;
+    margin:auto;
+    width:100px;
+    height:100px;
+    animation:none;
+    transform: translateY(0) translateX(50%);
+    position:absolute;
+}
+#menu li>.tab1{
+    background-position: -4px -4px;
+}
+#menu li>.tab3{
+    background-position: -5px -3px
+}
+#menu li>.tab5{
+    background-position: -2px -2px;
+}
+#tab{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transition: 0.5s;
+}
+[class*="tab"]{
+    display:block;
+    position:absolute;
+    width:230px;
+    height:230px;
+    border-radius: 50%;
+    border:2px solid red;
+}
+.tab1{
+    animation:fade-in1 2s forwards;
+    animation-play-state: paused;
+    transform:translateY(-3000px) ;
+    background-image: url(../Image/Home.jpg);
+    background-size: 105%;
+    background-position:-8px -9px  ;
+}
+.tab2{
+    
+    transform:translateY(-3000px);
+    animation:fade-in2 2s 0.25s forwards;
+    animation-play-state: paused;
+    background-image: url(../Image/About.jpg);
+    background-size: 104%;
+    background-position: -5px -4px;
+}
+.tab3{
+    animation:fade-in3 2s 0.5s forwards;
+    animation-play-state: paused;
+    transform:translateY(-3000px);
+    background-image: url(../Image/Main.jpg);
+    background-size: 110%;
+    background-position: -11px -12px;
+}
+.tab4{
+    animation:fade-in4 2s 0.75s forwards;
+    animation-play-state: paused;
+    transform:translateY(-3000px);
+    background-image: url(../Image/Guide.jpg);
+    background-size: 100%;
+}
+.tab5{
+    animation:fade-in5 2s 1s forwards;
+    animation-play-state: paused;
+    transform:translateY(-3000px);
+    background-image: url(../Image/Access.jpg);
+    background-size:105%;
+    background-position: -5px;
+}
+[class*="tab"]:hover{
+    filter: brightness(90%);
+}
+@keyframes fade-in1{
+    from{
+        transform:translateY(-3000px) rotateX(0) rotateY(0) rotateZ(0);
+    }
+    to{
+    transform: translateX(-50%) translateY(-110%) rotateY(1080deg);
+    
+    }
+}
+@keyframes fade-in2{
+    from{
+       transform:translateY(-3000px);
+    }
+    to{
+        transform:translateX(27%) translateY(-46%); 
+    }
+}
+@keyframes fade-in3{
+    from{
+        transform:translateY(-3000px);
+    }
+    to{
+      transform:translateY(50%);  
+    }
+}
+@keyframes fade-in4{
+    from{
+        transform:translateY(-3000px);
+    }
+    to{
+        transform:translateY(50%) translateX(-100%);
+    }
+}
+@keyframes fade-in5{
+    from{
+        transform:translateY(-3000px);
+    }
+    to{
+       transform:translateX(-127%) translateY(-46%); 
+    }
+}
