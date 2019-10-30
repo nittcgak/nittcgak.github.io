@@ -49,7 +49,7 @@
 
 html,
 body {
-    background-image: url(image/haikei.jpg);
+    background-image: url(Image/haikei.jpg);
     background-attachment: fixed;
     font-family: sans-serif;
     margin: 0;
@@ -69,7 +69,7 @@ main {
 #background {
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(image/背景.jpg);
+    background-image: url(Image/背景.jpg);
     filter: brightness(70%);
     background-position-x: center;
     background-position-y: 50%;
@@ -185,7 +185,7 @@ top:0;
 left:0;
 }
 #introduce>.depart {
-    background-image: url(image/parts.png);
+    background-image: url(Image/parts.png);
     background-size:100% 100%;
     position: relative;
     float: left;
