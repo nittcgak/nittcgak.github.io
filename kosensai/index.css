@@ -134,6 +134,7 @@ main {
 
 #top>.date img {
     transform: translateX(2.3%);
+    width:90%;
 }
 
 #top>#other {
