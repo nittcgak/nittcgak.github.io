@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "aoyanagi";
+    src: url(font/aoyagireisyosimo_ttf_2_01.ttf);
+}
+
+@media(min-width:1024px) {
+    #guide_cover img {
+        width:50%;
+    }
+
+    main, #background {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    html,
+    body {
+        font-size: 31.25px;
+    }
+
+    #menu {
+        height: 200px;
+    }
+}
+
+@media(max-width:1023px) {
+    #guide_cover img {
+        width:80%;
+    }
+
+    main,
+    #background,
+    html,
+    body {
+        width: 100%;
+        font-size: calc(100vw / 32);
+
+    }
+
+    #menu {
+        height: 45vw;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+html,
+body {
+    /* background-image: url(./Image/black.PNG); */
+    background-color: #070707;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    background-size: contain;
+    color: rgb(255, 246, 196);
+    font-weight: 600;
+}
+
+main {
+
+    position: relative;
+    z-index: 10;
+
+}
+
+#background {
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./Image/earth.PNG);
+    filter: brightness(50%);
+    background-position-x: center;
+    background-position-y: 50%;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+#menu {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0;
+}
+
+.flex>* {
+    width: 30%;
+}
+
+.flex>div>img {
+    width: 90%;
+}
+
+#menu>ul>li>img {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+#main {
+    overflow: hidden;
+    width:85%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#main>.contents {
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: none;
+}
+
+#main>.contents:first-child {
+    display: block;
+}
+#main video{
+    margin-bottom:10%;
+}
+
+#top>.date {
+    text-align: center;
+}
+
+#top>.date img {
+    /* transform: translateX(2.3%); */
+    width:70%;
+}
+
+#top>#other {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#top>#other>div {
+    font-size: 85%;
+    text-align: center;
+    width: 32%;
+}
+
+#top>#other>div p {
+    margin: 0%;
+}
+
+#top>#other>div img {
+    width: 100%;
+}
+
+#about {
+    font-size: 120%;
+}
+
+#about #representative {
+    font-weight: 400;
+    font-size: 80%;
+    width: 90%;
+    margin: auto;
+    color:rgb(248, 238, 209)
+}
+
+#about p,
+h1 {
+    text-align: center;
+}
+
+.button {
+    width: 5%;
+}
+
+#back {
+    float: left;
+}
+#next {
+    float: right;
+}
+
+#introduce {
+    float: left;
+    width:90%;
+    margin: auto;
+}
+#introduce>.depart>*:not(img){
+position: absolute;
+top:0;
+left:0;
+}
+
+#introduce>.depart {
+    background-image: url(./Image/haikei_hoshi.png);
+    background-size:100% 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 100%;
+    /* height: auto; */
+    padding-bottom:80%;
+    display: none;
+}
+#introduce>.depart:first-child {
+    display: block;
+}
+
+#buttons{
+    width:100%;
+    text-align: center;
+}
+
+#introduce>.depart .comment {
+    width:63%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(93, 82, 241);
+    position: absolute;
+    left:50%;
+    top:47%;
+    overflow: hidden;
+    transition-duration: 1s;
+    max-height: 300%;
+    font-size: 60%;
+}
+#introduce>.depart .comment p{
+    margin:0;
+    font-size:130%;
+}
+
+#main #title{
+    font-size:150%;
+    text-align:center;
+    padding-bottom: 30px;
+}
+#main #sub_title{
+    text-align: center;
+    font-size:120%;
+}
+#main video{
+    width:80%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    display:block;
+}
+
+#guide{
+    font-size: 110%;
+    text-align:center;
+}
+#guide div {
+    text-align: center;
+}
+
+#guide>div:first-child {
+    font-size: 130%;
+    font-weight: 300;
+}
+
+#guide .map {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#guide .mapParts {
+    display: flex;
+    justify-content: center;
+}
+
+#guide .mapParts .parts {
+    text-align: center;
+    width: 80%;
+}
+
+#guide_cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 67, 67, 0.8);
+    position: absolute;
+    top: 0;
+    display: none;
+    position: fixed;
+    z-index: 11;
+}
+
+#guide_cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#access {
+    width: 95% !important;
+    font-size: 80%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#access .time_to_d {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-bottom: 70.5%;
+}
+
+#access>h2 {
+    color: rgb(255, 217, 107);
+}
+
+#access .time_to_d img {
+    width: 50%;
+
+    float: left;
+    display: block;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+#copyright {
+    text-align: center;
+    font-weight: 50;
+    font-size: 80%;
+}
+
+.caution {
+    font-weight: 50;
+}

@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html>
 
-	<!-- favicon関連の記述--> 
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
-	<link rel="manifest" href="favicon.ico/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+<head>
+    <meta charset="utf-8">
+    <title>47th 徳山高専  高専祭</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js" defer></script>
+</head>
 
 
-	<head>	
-		<meta charset="utf-8">	
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<body>
+    <div id="background">
+    </div>
+    <main>
+        <div id="menu">
+            <div class="flex">
+                <div v-for="item in items">
+                    <img v-bind:src="item.image" v-bind:id="item.id" v-on:click="changeContents">
+                </div>
+            </div>
+        </div>
+        <br>
 
-    		<title>徳山高専学生会</title>
-  	</head>
+        <div id="main">
+            <div class="contents 1" id="top">
+                <div class="date">
+                    <h1>第47回徳山高専高専祭</h1>
+                    <img id="logo" src="./Image/logo_800px.PNG">
+                    <div>10月30日開催！</div>
+                    <div>場所　徳山工業高等専門学校</div>
+                </div>
+                <br><br><br>
+                <div id="other">
+                    <div id="robokon">
+                        <p>周南ロボコンはこちら</p>
+                        <a target="_blank" href="https://www.tokuyama.ac.jp/robocon/2021/index.html">
+                            <img src="Image/bnr_robocon2.jpg">
+                        </a>
+                    </div>
+                    <div id="gakuseikai">
+                        <p>学生会HPはこちら</p>
+                        <a target="_blank" class="HomePage_btn" href="https://nittcgak.github.io/"><img
+                                src="./Image/btn-gakuseikai.png"></a>
+                    </div>
+                </div>
+                <br>
+                <div id="copyright">
+                    <p>Copyright © 2021 National Institute of Technology, Tokuyama College Student Council and i18hiromasa All Rights Reserved</p>
+                    
+                    <p>Copyright © 2019 National Institute of Technology, Tokuyama College Student Council All Rights Reserved</p>
+                </div>
+                <br>
+            </div>
+            <div class="contents 2" id="about">
+                <h1>第47回高専高専祭</h1>
+                <div id="representative">
+                    今年の高専祭のテーマは「Power of Power〜力こそ力〜」です。明日がどんな日になるか誰だってわからないけどそれはどんな日にもできるという思いが込められています。
+                    制約が多く例年通りとはいきませんが、お化け屋敷や、迷路・フォトスポットなど様々な企画を開催しています。我々が創り上げた高専祭をぜひ楽しんでください。
+                </div>
+                <p>
+                    ーーーーー部署紹介ーーーーー
+                </p>
+                <div id="introduce-box">
+                    <img src="./Image/left_button5.PNG" class="button" id="back">
+                    <div id="introduce">
+                        <div class="depart" v-for="department in list">   
+                            <div class="comment">
+                                    <p>{{department.name}}部署</p>
+                                {{department.comment}}
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./Image/right_button5.PNG" class="button" id="next">
+                    
+                    <!-- <div id="buttons">
+                        <img src="./Image/backbutton.png" class="button" id="back">
+                        <img src="./Image/nextbutton.png" class="button" id="next">
+                    </div>   -->
+                </div>
+            </div>
+            <div class="contents 3" id="main">
+                <div id="title">【潜入】ワクチンを手に入れろ</div>
+                企画紹介
+                <div id="introduction">
+                    2021年、徳山高専にあるウイルスがばら撒かれた。感染を防ぐためには、ワクチンが必要だ！研究室からワクチンを入手してくれ！！ 
+                </div>
+                
+            </div>
+            <div class="contents 4" id="guide">
+                <div>全体図</div>
+                <img class="map" src="Image/map_whole.png">
+                クリックすると拡大します。
+                <div class="mapParts">
+                    <div class="parts">①教室管理棟, ②屋外
+                        <img class="map" src="Image/map_indoor.png"></div>
+                </div>
+                <br>
+            </div>
+            <div class="contents 5" id="access">
+                <h2>バス ～Bus～</h2>
+                <p class="list">・JR徳山駅前から防長交通バス</p>
+                <p>「久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円</p>
+                <p>「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円</p>
+                <p class="list">・JR櫛ヶ浜駅から防長交通バス</p>
+                <p>「徳山高専」行に乗車、「高専正門」下車すぐ</p>
+                <p class="caution">※運賃は異なる場合がございますので、多めの準備をお願いします</p>
+                <h2>自動車 ～Car～</h2>
+                <p>山陽自動車道 徳山東インターから約5分</p>
+                <h2>タクシー ～Taxi～</h2>
+                <p>JR徳山駅から約15分JR櫛ヶ浜駅から約10分</p>
 
-	<!-- ヘッダ -->
-	<div id="header"><h1><a href="index.html">平成30年度徳山高専学生会</a></h1></div>
-	
-	<!-- メインメニュー -->
-	<ul class="nav">
-	    <li class="nav__item"><a href="infogak.html">学生会紹介</a></li>
-	    <li class="nav__item"><a href="infokyoku.html">　局紹介　</a></li>
-	    <li class="nav__item"><a href="gyoji.html">　行事予定</a></li>
-	    <li class="nav__item"><a href="meyasubako.html">　目安箱　</a></li>
-	    <li class="nav__item"><a href="./kosensai/index.html">　高専祭　</a></li>
-	</ul>
-	
-	<body>
+        </div>
+        </div>
+    </main>
+    <br>
+    <div id="guide_cover"></div>
+    <script src="vue.min.js"></script>
+</body>
 
-	<center>
-
-		<br><br><br>
-
-		<h2>更新情報</h2>
-		<p>2018年8月8日　ページを公開しました。<br></p>
-		<p>2018年10月18日　行事予定、高専祭を公開しました。</p>
-
-		<h2>ツイート</h2>
-
-		<a class="twitter-timeline" width="320px" height="400px" href="https://twitter.com/nittc_gak?ref_src=twsrc%5Etfw">Tweets by nittc_gak</a> 
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-		<br>
-
-		<a href="https://twitter.com/intent/follow?screen_name=nittc_gak" class="fl_tw2">
-			<i class="fab fa-twitter"></i> <span>Follow Me</span>
-		</a>
-
-		<br><br><br>
-
-		<div id="footer">Copyright &copy; 2018 National Institute of Technology, Tokuyama College Student Council All Rights Reserved.</div>
-
-	</center>
-
-  	</body>
 
 </html>
-
-
