@@ -81,8 +81,8 @@ map_cover.addEventListener("click", function () {
 var index=0;
 var departs=document.getElementsByClassName("depart");
 
-var buts=document.getElementsByClassName("button");
-Array.prototype.forEach.call(buts,function(button,id){
+var buttons=document.getElementsByClassName("buttons");
+Array.prototype.forEach.call(buttons,function(button,id){
     button.addEventListener("click",function(){
         // console.log(id);
         if(id==0){//backがid = 0

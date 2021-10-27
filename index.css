@@ -177,18 +177,24 @@ h1 {
 }
 
 .button {
-    width: 5%;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 50%;
 }
 
 #back {
-    float: left;
+    left: 5%;
+    height: 100%;
+    z-index: 10;
 }
 #next {
-    float: right;
+    right: 5%;
+    height: 100%;
+    z-index: 10;
 }
 
 #introduce {
-    float: left;
     width:90%;
     margin: auto;
 }
@@ -196,6 +202,11 @@ h1 {
 position: absolute;
 top:0;
 left:0;
+}
+
+#introduce-box {
+    overflow:hidden;
+    position: relative;
 }
 
 #introduce>.depart {
@@ -213,9 +224,11 @@ left:0;
     display: block;
 }
 
-#buttons{
-    width:100%;
-    text-align: center;
+.buttons{
+    width:5%;
+    /* height: 33vh;
+    position: relative; */
+    position: absolute;
 }
 
 #introduce>.depart .comment {
