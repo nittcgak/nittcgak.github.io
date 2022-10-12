@@ -5,21 +5,28 @@ jobs:
   build:
     name: Build pug and SCSS
     runs-on: ubuntu-latest
-    if: contains(github.head_ref, '48th')
     steps:
       - name: Clone repository
-        uses: actions/checkout@2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@2
+        uses: actions/setup-node@v2
       - run: |
           npm i
           npx gulp scss
           npx gulp pug
           npm run format
 
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v4.2.0
+      - name: Archive index.html
+        uses: actions/upload-artifact@v3
         with:
-          commit_message: 'Build by github actions'
+          name: upload index.html
+          path: index.html
+
+      - name: Archive index.css
+        uses: actions/upload-artifact@v3
+        with:
+          name: upload index.css
+          path: style/index.css
+
 
