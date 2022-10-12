@@ -1,0 +1,73 @@
+extends ./_layout
+
+append value
+    - const description = "48th 徳山高専 高専祭";
+    - const title = "第48回 徳山高専 高専祭"
+
+append addcss
+    link(rel='stylesheet' href='./style/index.css')
+
+append addjs
+    //script(src='./index.js')
+
+append content
+    dialog.modal
+        .modal_content
+            h1 高専祭への来場にあたってのお願い
+            p 以下のボタンより来場者確認カードのダウンロードページに遷移していただき来場者確認カードをダウンロードの後ご記入の上ご来場ください
+            a(href='https://forvisitor.netlify.app') ダウンロードページ
+
+    #container
+        article#top
+            h2.title なんかイメージが来るらしい
+
+        article#about
+            h2.content_title About
+            section.about_content
+                .greet
+                    img(src='./image/principal.jpg')
+                    .content
+                        h3 校長 勇　秀憲
+                        p 徳山高専「高専祭」にご来場いただき、ありがとうございます。高専祭は今年で第48回を迎えます。今年のテーマは、”4”を”for”に”8”を”∞(無限)“とし「高専祭には無限の可能性がある」という意味も込めています。コロナ感染対策を徹底しての開催です。ご理解、ご協力をお願いします。学生たちが多くの企画や催しを準備しています。みなさん、大いに楽しんでください。
+
+                .greet
+                    .content
+                        h3 実行委員長 長谷川 京香
+                        p この度は第48回徳山高専高専祭にお越しくださり誠にありがとうございます。皆様にはご不便をお掛けしますが、3密の回避、消毒の実施などの感染症予防のための取り組みへのご協力をお願いするとともに、学生に限らず多くの方のご尽力により開催することができましたこの度の高専祭をぜひ楽しんでいただけたら幸いです。
+                    img(src='./image/chairman.jpg')
+
+
+
+        article#event
+            h2.content_title Event
+            mixin card(_title, _content, _image, _alt)
+                .card
+                    .wrap
+                        img(src=_image alt=_alt)
+                        .card_content
+                            h3.card_title #{_title}
+                            p.card_desc #{_content}
+
+            - const events = [{title: 'ロボコン', desc: '模擬店の説明模擬店の説明模擬店の説明模擬店の説明模擬店の説明模擬店の説明', image: './image/rob.jpg', alt:'ロボコン'}, {title: 'メイン部署', desc:'メイン部署の説明メイン部署の説明メイン部署の説明メイン部署の説明メイン部署の説明', image: './image', alt: '写真の情報'}];
+            each event in events
+              +card(event.title, event.desc, event.image)
+
+        article#info
+            h2.content_title Info
+            .wrap
+                img(src='map_image')
+                .info_content
+
+
+        article#sponsor
+            h2.content_title Sponsor
+            img(src='sponsor_image')
+
+        article#dept
+            h2.content_title Department
+            .dept_content
+                ul
+                    li 〇〇部署
+                    li ××部署
+                    li △△部署
+
