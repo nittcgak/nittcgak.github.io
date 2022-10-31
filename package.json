@@ -3,10 +3,11 @@
   "scripts": {
     "start": "yarn build-css && yarn autoprefixer",
     "build-css": "node-sass --include-path scss style/index.scss style/index.css --output-style compressed",
-    "compile": "npx gulp pug",
+    "build": "npx gulp pug && npx gulp scss",
     "autoprefixer": "postcss --use autoprefixer --no-map style/index.css -d style/",
     "format": "prettier --write './**/*.{html,scss,js}'",
-    "scss_watcher": "onchange './style/**/*.scss' -- npx gulp scss"
+    "scss_watcher": "onchange './style/**/*.scss' -- npx gulp scss",
+    "pug_wacher": "onchange './src/index.pug' -- npx gulp pug"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

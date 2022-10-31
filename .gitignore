@@ -4,5 +4,3 @@ yarn.lock
 node_modules
 package-lock.json
 yarn-error.log
-index.html
-style/index.css

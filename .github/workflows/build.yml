@@ -18,15 +18,29 @@ jobs:
           npm run format
 
       - name: Archive index.html
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: upload index.html
           path: index.html
 
       - name: Archive index.css
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: upload index.css
           path: style/index.css
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
 
 
