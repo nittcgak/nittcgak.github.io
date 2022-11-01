@@ -216,7 +216,6 @@ body {
         .withoutimg {
           padding: 1em;
           .card_title {
-
           }
           .card_location {
             display: inline-block;
@@ -314,7 +313,7 @@ body {
     }
     article:nth-child(even) {
       background: $evenBackground;
-      .section_title{
+      .section_title {
         color: $evenTitleColor;
       }
     }
