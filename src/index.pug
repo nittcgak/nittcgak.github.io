@@ -118,35 +118,38 @@ append content
         article#sponsor.content
             h2.section_title スポンサー
             .wrap
-                a(href='./pdfjs/web/viewer.html?file=../../image/sponsor.pdf') スポンサー
+                h3.sponsor_content 今年度も多くのスポンサーの皆様のご支援のもと運営しております。
+                a(href='./pdfjs/web/viewer.html?file=../../image/sponsor.pdf' class='sponsor_btn')
+                    img(src='./image/sponsor.webp' alt='スポンサーの皆様')
 
         article#dept.content
             .wrap
                 h2.section_title 部署紹介
                 .dept_content
-                    ul.dept_list
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/honbu.pdf' target='_blank') 本部
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/main.pdf' target='_blank') メイン部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/guidance.pdf' target='_blank') 案内部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/robo.pdf' target='_blank') ロボコン部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/cleanup.pdf' target='_blank') 美化部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/store.pdf' target='_blank') 模擬店部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/sponsor.pdf' target='_blank') スポンサー部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/enshutu.pdf' target='_blank') 演出部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/stage.pdf' target='_blank') ステージ部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/venue.pdf' target='_blank') 会場部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/relation.pdf' target='_blank') 広報部署
+                    .dept_list
+
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/honbu.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/honbu.webp' alt='本部')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/main.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/main.webp' alt='メイン部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/guidance.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/guidance.webp' alt='案内部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/robo.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/robo.webp' alt='ロボコン部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/cleanup.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/clean.webp' alt='美化部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/store.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/store.webp' alt='模擬店部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/sponsor.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/sponsor.webp' alt='スポンサー部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/enshutu.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/enshutu.webp' alt='演出部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/stage.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/stage.webp' alt='ステージ部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/venue.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/venue.webp' alt='会場部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/relation.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/relation.webp' alt='広報部署')
 
         article#greeting.content
             h2.section_title ご挨拶
