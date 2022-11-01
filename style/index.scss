@@ -286,8 +286,16 @@ body {
       .wrap {
         margin-right: 3em;
         margin-left: 3em;
-        a {
-          text-decoration: none;
+        text-align: center;
+        padding-bottom: 1em;
+        .sponsor_content {
+          padding-bottom: 1em;
+        }
+        .sponsor_btn {
+          img {
+            aspect-ratio: 1/1.15;
+            max-width: 250px;
+          }
         }
       }
     }
@@ -297,11 +305,15 @@ body {
         margin-right: 3em;
         margin-left: 3em;
         .dept_content {
+          padding-bottom: 1em;
           .dept_list {
-            list-style: none;
-            li {
-              a {
-                text-decoration: none;
+            padding: 0 1em 0 1em;
+            display: inline-block;
+            text-align: center;
+            .dept_item {
+              img {
+                aspect-ratio: 3/1;
+                width: 200px;
               }
             }
           }
