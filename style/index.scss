@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap");
-$evenBackground: #fff;
+$evenBackground: #e5ffff;
 //$oddBackground: #fef7f8;
-$oddBackground: #e5ffff;
+$oddBackground: #fff;
 //$oddTitleColor: #d65f63;
-$oddTitleColor: #295c58;
+$evenTitleColor: #295c58;
 $mainFont: "M PLUS Rounded 1c", sans-serif;
 $fontColor: #6a6a6a;
 $stroke: #6c6c6c;
@@ -107,6 +107,12 @@ body {
       }
     }
     #about {
+      .about_content {
+        font-size: calc(10px + 2vmin);
+        padding: 0 2em 2em 2em;
+      }
+    }
+    #greeting {
       height: auto;
       .section_title {
         margin-bottom: 1em;
@@ -115,7 +121,7 @@ body {
         margin-right: 24px;
         margin-left: 24px;
         padding-bottom: 1em;
-        .about_content {
+        .wrap {
           .greet {
             background-color: #fff;
             margin-bottom: 3em;
@@ -128,14 +134,14 @@ body {
               margin-right: 10em;
               padding: 1em 3em 1em 3em;
             }
-            .about_content {
+            .greet_content {
               padding: 0 1em 1em 1em;
 
               .name {
                 padding: 1em 1em 1em 0;
               }
             }
-            .about_img {
+            .greet_img {
               margin: 0 auto;
               img {
                 max-height: none;
@@ -281,9 +287,8 @@ body {
       .wrap {
         margin-right: 3em;
         margin-left: 3em;
-        img {
-          width: 100px;
-          height: 100px;
+        a {
+          text-decoration: none;
         }
       }
     }
@@ -295,18 +300,23 @@ body {
         .dept_content {
           .dept_list {
             list-style: none;
+            li {
+              a {
+                text-decoration: none;
+              }
+            }
           }
         }
       }
     }
     article:nth-child(odd) {
       background: $oddBackground;
-      .section_title {
-        color: $oddTitleColor;
-      }
     }
     article:nth-child(even) {
       background: $evenBackground;
+      .section_title{
+        color: $evenTitleColor;
+      }
     }
   }
   #pagination {

@@ -21,6 +21,9 @@ append content
     section#top.content
 
     #container
+        article#about.content
+            h2.section_title 第48回徳山高専高専祭
+            p.about_content 高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。 このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。
 
         article#event.content
             h2.section_title 模擬店
@@ -53,11 +56,12 @@ append content
                     {title: "ロボコン", desc: '今年の周南ロボコンの競技テーマはサッカーです。シュートロボットとドリブルロボットに分かれて二人一組でゴールを目指します。一番点が高い人が優勝です。是非白熱したバトルをご覧ください！！', image: './image/logos/robo.webp', alt: 'ロボコン', location: "第二体育館", id: 'robocon'},
                     {title: "1年生企画", desc: 'あなたは学校に忘れ物をしました。 あなたが忘れ物をした教室にはお化けがいるという噂が広まっています。 忘れ物をすべてとって帰ることができますか。 勇気のある方はもちろん、ない方もぜひ、1年生の教室に足を運んでみてください。1年3組にはフォトスポットもあります！', image: './image/logos/1.webp', alt: '1年生企画', location: "1年生教室", id: 'first'}];
                 const eventsWithoutImg = [
+                    {title: 'ME学科企画', desc: 'ME企画では、ME学科紹介として、授業で製作したロボットや実習工場の製作物などの展示を行います。学生製作の色々なロボットや実習工場の高精度な製作物を見ることができます。是非見学にお越しください！', location: '実習工場'},
+                    {title: 'CA学科企画', desc: 'パスタと粘土この二つの材料で高さを競う、それがパスタタワー！個人でもチームでも大歓迎、最高記録を塗り替えるのはあなたかもしれません。お待ちしております！', location: '専門科目棟2階 共同研究室'},
                     {title: '女子バスケットボール部', desc: 'こんにちは！バスケ部です。私達は射的をします。どなたでも気軽に参加していただけます。是非遊びに来てください♪沢山の飾り付けもしているのでそちらもお楽しみください♪', location: '第一スタジオ型演習室'},
                     {title: '園芸同好会', desc: '園芸同好会では、2日目の午前中に自分たちで育てたひまわりの種を配布します。近くの花壇で花も植える予定なのでお楽しみに♪', location: '池周辺の花壇付近'},
                     {title: '美術部', desc: '美術部は談話室で作品を展示しています！楽しい展示スペースになるように各部員頑張りましたので、ぜひ見ていって下さい！今年は絵画に加えて新しいタイプの展示もあるかも…？', location: '談話室'},
-                    {title: '文芸部', desc: 'どうも！文芸部です。文芸部では文芸誌の配布を行います。無料配布になるのでご自由にお持ちください。かなり自由に書かれた物語が入っています。 難し気なものではないので気楽にお読みください！', location: '談話室'},
-                    {title: 'CA学科企画', desc: 'パスタと粘土この二つの材料で高さを競う、それがパスタタワー！個人でもチームでも大歓迎、最高記録を塗り替えるのはあなたかもしれません。お待ちしております！', location: '専門科目棟2階 共同研究室'}];
+                    {title: '文芸部', desc: 'どうも！文芸部です。文芸部では文芸誌の配布を行います。無料配布になるのでご自由にお持ちください。かなり自由に書かれた物語が入っています。 難し気なものではないので気楽にお読みください！', location: '談話室'}];
             .wrap
                 .card
                     input(type='image' alt='IE学科企画' src='./image/logos/IE.webp' class='card_button' id='ie')
@@ -87,7 +91,6 @@ append content
         article#info.content
             h2.section_title アクセス/マップ
             .wrap
-                //img(src='map_image' alt='マップ')
                 .access
                     h3 バス
                     p.access_content
@@ -111,11 +114,6 @@ append content
                             a(href='./image/widemap.webp' target='_blank') 全体マップはこちら
                         p
                             a(href='./image/insidemap.webp' target='_blank') 校内マップはこちら
-                //a(href='https://goo.gl/maps/QSsth99ah3HvgynN8' target='_blank') 徳山高専はこちら
-        //article#sns.content
-            h2.section_title SNS
-            .wrap
-                |<a class="twitter-timeline" href="https://twitter.com/toku_kosensai?ref_src=twsrc%5Etfw" data-tweet-limit='2'>Tweets by toku_kosensai</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         article#sponsor.content
             h2.section_title スポンサー
@@ -150,47 +148,48 @@ append content
                         li
                             a(href='./pdfjs/web/viewer.html?file=../../image/depts/relation.pdf' target='_blank') 広報部署
 
-        article#about.content
+        article#greeting.content
             h2.section_title ご挨拶
             .wrap
-                section.about_content
+                .wrap
                     .greet
-                        .about_img
+                        .greet_img
                             img(src='./image/principal.webp' alt='校長先生')
-                        .about_content
+                        .greet_content
                             h3.name 校長 勇　秀憲
                             p 徳山高専「高専祭」にご来場いただき、ありがとうございます。高専祭は今年で第48回を迎えます。今年のテーマは、”4”を”for”に”8”を”∞(無限)“とし「高専祭には無限の可能性がある」という意味も込めています。コロナ感染対策を徹底しての開催です。ご理解、ご協力をお願いします。学生たちが多くの企画や催しを準備しています。みなさん、大いに楽しんでください。
 
                     .greet
-                        .about_img
+                        .greet_img
                             img(src='./image/chairman.webp' alt='実行委員長')
-                        .about_content
+                        .greet_content
                             h3.name 実行委員長 長谷川 京香
                             p この度は第48回徳山高専高専祭にお越しくださり誠にありがとうございます。皆様にはご不便をお掛けしますが、3密の回避、消毒の実施などの感染症予防のための取り組みへのご協力をお願いするとともに、学生に限らず多くの方のご尽力により開催することができましたこの度の高専祭をぜひ楽しんでいただけたら幸いです。
 
                     .greet
-                        .about_img
+                        .greet_img
                             img(src='./image/president.webp' alt='学生会長')
-                        .about_content
+                        .greet_content
                             h3.name 学生会長 山田 大智
                             p 第48回高専祭を開催するにあたってご協賛いただいきましたスポンサーの皆様、徳山大学の皆様、並びに高専関係者の皆様に心よりお礼申し上げます。今年は幸いなことに3年ぶりの2日間での開催となりました。去年とは大きく変化した状況の中、学生会は皆様に全力で楽しんでいただくことができるよう準備いたしました。2日間惜しみなく皆様に満足していただける企画が盛りだくさんですので、最後まで楽しんでいただけると幸いです。
 
                     .greet
-                        .about_img
+                        .greet_img
                             img(src='./image/manager.webp' alt='学生主事')
-                        .about_content
+                        .greet_content
                             h3.name 学生主事 張間  貴史
                             p
                                 | おいでませ「高専祭」へ。<br>
                                 | 一昨年は中止、昨年は規模を縮小しての開催でしたが、今年は従前に近い形での開催となりました。高専祭実行委員長を中心として、各部署、各企画が準備を進めてまいりました。ご来場の皆さまには、それぞれの企画や展示で学生の無限(∞)のエネルギーを感じ取って、楽しんでいただけますと幸いです。
 
     nav.pagination#pagination
+        a(href='#about')
         a(href='#event')
         a(href='#info')
         a(href='#sns')
         a(href='#sponsor')
         a(href='#dept')
-        a(href='#about')
+        a(href='#greeting')
 
     footer
         p Copyright © 2022 National Institute of Technology, Tokuyama College Student Council All Rights Reserved
