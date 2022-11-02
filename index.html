@@ -204,6 +204,25 @@
             <input
               class="card_button"
               type="image"
+              alt="CA3"
+              src="./image/logos/CA3.webp"
+              id="ca_third"
+            />
+            <dialog class="card_modal">
+              <div class="modal_content">
+                <img class="card_img" src="./image/logos/CA3.webp" alt="CA3" />
+                <h3 class="card_title">CA3</h3>
+                <p class="card_location">実習棟横</p>
+                <p class="card_content">
+                  こんにちは!CA3です！私たちはひとくちパイの屋台を出します。たこ焼き器で作るので、多bやすいサイズで可愛さ抜群です!!ぜひ食べに来てください!
+                </p>
+              </div>
+            </dialog>
+          </div>
+          <div class="card">
+            <input
+              class="card_button"
+              type="image"
               alt="CA2"
               src="./image/logos/CA2.webp"
               id="ca_second"
@@ -474,30 +493,30 @@
               難し気なものではないので気楽にお読みください！
             </p>
           </div>
+          <div class="withoutimg">
+            <h3 class="card_title">テラス計画</h3>
+            <p class="card_location">高城寮テラス、合宿所</p>
+            <p class="card_content">
+              テラス計画は2021年12月から寮食堂周辺にテラス席を設けるため、家具や植栽の設計制作活動をしてきました。高専祭イベント「ダベるテラス」では合宿所とテラスを開放&イベントを開催します！是非ダベりに来てください！<br /><a
+                class="dormitory"
+                href="./pdfjs/web/viewer.html?file=../../image/terrace.pdf"
+                target="_blank"
+                ><img src="./image/terraceIcon.webp" alt="テラス企画"
+              /></a>
+            </p>
+          </div>
         </div>
       </article>
       <article class="content" id="info">
-        <h2 class="section_title">アクセス/マップ</h2>
+        <h2 class="section_title">スケジュール/マップ</h2>
         <div class="wrap">
-          <div class="access">
-            <h3>バス</h3>
-            <p class="access_content">
-              ・JR徳山駅前から防長交通バス<br />
-              「久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円<br />
-              「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円<br />
-              ・JR櫛ヶ浜駅から防長交通バス<br />
-              「徳山高専」行に乗車、「高専正門」下車すぐ<br />
-              ※運賃は異なる場合がございますので、多めの準備をお願いします<br />
-            </p>
-            <a href="./image/bus.webp" target="_blank"
-              >シャトルバス運行表はこちら</a
+          <div class="schedule info_content">
+            <h3>スケジュール</h3>
+            <a href="./image/schedule.webp" target="_blank"
+              >スケジュールはこちら</a
             >
-            <h3>車</h3>
-            <p class="access_content">山陽自動車道 徳山東インターから約5分</p>
-            <h3>タクシー</h3>
-            <p class="access_content">JR徳山駅から約15分JR櫛ヶ浜駅から約10分</p>
           </div>
-          <div class="info_content">
+          <div class="info_content info_content">
             <h3>マップ</h3>
             <div class="maps">
               <p>
@@ -512,6 +531,32 @@
               </p>
             </div>
           </div>
+          <div class="access info_content">
+            <section>
+              <h3>バス</h3>
+              <p class="access_content">
+                ・JR徳山駅前から防長交通バス<br />
+                「久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円<br />
+                「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円<br />
+                ・JR櫛ヶ浜駅から防長交通バス<br />
+                「徳山高専」行に乗車、「高専正門」下車すぐ<br />
+                ※運賃は異なる場合がございますので、多めの準備をお願いします<br />
+              </p>
+              <a href="./image/bus.webp" target="_blank"
+                >シャトルバス運行表はこちら</a
+              >
+            </section>
+            <section>
+              <h3>車</h3>
+              <p class="access_content">山陽自動車道 徳山東インターから約5分</p>
+            </section>
+            <section>
+              <h3>タクシー</h3>
+              <p class="access_content">
+                JR徳山駅から約15分JR櫛ヶ浜駅から約10分
+              </p>
+            </section>
+          </div>
         </div>
       </article>
       <article class="content" id="sponsor">
@@ -523,6 +568,7 @@
           <a
             class="sponsor_btn"
             href="./pdfjs/web/viewer.html?file=../../image/sponsor.pdf"
+            target="_blank"
             ><img src="./image/sponsor.webp" alt="スポンサーの皆様"
           /></a>
         </div>
@@ -649,8 +695,7 @@
     </div>
     <nav class="pagination" id="pagination">
       <a href="#about"></a><a href="#event"></a><a href="#info"></a
-      ><a href="#sns"></a><a href="#sponsor"></a><a href="#dept"></a
-      ><a href="#greeting"></a>
+      ><a href="#sponsor"></a><a href="#dept"></a><a href="#greeting"></a>
     </nav>
     <footer>
       <p>
