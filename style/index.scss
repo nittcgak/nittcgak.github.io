@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap");
 $evenBackground: #e5ffff;
-//$oddBackground: #fef7f8;
 $oddBackground: #fff;
-//$oddTitleColor: #d65f63;
 $evenTitleColor: #295c58;
 $mainFont: "M PLUS Rounded 1c", sans-serif;
 $fontColor: #6a6a6a;
 $stroke: #6c6c6c;
 $cardColor: #001858;
 $locationBackground: #fff;
-//$locationColor: #5bb2aa;
 $locationColor: #ce4045;
+$dotColor: #ce4045;
 
 $breakpoints: (
   m: "only screen and (min-width: 600px)",
@@ -216,7 +214,6 @@ body {
         .withoutimg {
           padding: 1em;
           .card_title {
-
           }
           .card_location {
             display: inline-block;
@@ -224,6 +221,16 @@ body {
             color: $locationColor;
             padding: 0.3em 0.6em 0.3em 0.6em;
             border-radius: 15%;
+          }
+          .card_content {
+            .dormitory {
+              img {
+                margin-top: 1em;
+                aspect-ratio: 1.5 / 1;
+                width: 200px;
+                border-radius: 10px;
+              }
+            }
           }
         }
       }
@@ -248,30 +255,27 @@ body {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          .info_content {
-            iframe {
-              width: 100%;
-              height: 300px;
+        }
+        a {
+          text-decoration: underline dashed $dotColor;
+          color: $fontColor;
+        }
+
+        .info_content {
+          padding-bottom: 1em;
+          .schedule_img {
+            img {
+              aspect-ratio: 3/1;
+              width: 250px;
             }
           }
         }
-        a {
-          text-decoration: none;
-        }
-        .access_content {
-          font-size: 0.9em;
-          padding-bottom: 1em;
-        }
-        .info_content {
-          .maps {
-            line-height: 1.5em;
+        .access {
+          .access_content {
+            font-size: 0.9em;
           }
-          iframe {
-            border: none;
-            margin: 0 auto;
-            display: block;
-            height: 200px;
-            width: 250px;
+          section {
+            padding-top: 1em;
           }
         }
       }
@@ -285,10 +289,17 @@ body {
     }
     #sponsor {
       .wrap {
-        margin-right: 3em;
-        margin-left: 3em;
-        a {
-          text-decoration: none;
+        margin: 0 1em 0 1em;
+        text-align: center;
+        padding-bottom: 1em;
+        .sponsor_content {
+          padding-bottom: 1em;
+        }
+        .sponsor_btn {
+          img {
+            aspect-ratio: 1/1.15;
+            max-width: 250px;
+          }
         }
       }
     }
@@ -298,11 +309,15 @@ body {
         margin-right: 3em;
         margin-left: 3em;
         .dept_content {
+          padding-bottom: 1em;
           .dept_list {
-            list-style: none;
-            li {
-              a {
-                text-decoration: none;
+            padding: 0 1em 0 1em;
+            display: inline-block;
+            text-align: center;
+            .dept_item {
+              img {
+                aspect-ratio: 3/1;
+                width: 250px;
               }
             }
           }
@@ -314,7 +329,7 @@ body {
     }
     article:nth-child(even) {
       background: $evenBackground;
-      .section_title{
+      .section_title {
         color: $evenTitleColor;
       }
     }

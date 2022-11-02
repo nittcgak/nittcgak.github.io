@@ -8,7 +8,7 @@ append addcss
     link(rel='stylesheet' href='./style/index.css')
 
 append addjs
-    script(src='./index.js')
+    script(src='./index.js' type='module')
 
 append content
     h3.notify このデバイスでは表示できません。お持ちのスマートフォンでご覧下さい。
@@ -45,6 +45,7 @@ append content
                     {title: 'ME3', desc: 'こんにちは、ME3です!ME3は、ポップコーンを販売します。塩味とキャラメル味の2種類があり、その場で作るので作りたてのポップコーンが食べられます。ぜひ食べに来てください!お待ちしております!', image: './image/logos/ME3.webp', alt: 'me_third', location: "実習棟横", id: 'me_third'},
                     {title: "IE3", desc: "こんにちは!IE3です。IE3は今年チュロスを作ります。冷凍されたものをただあげるだけでなく、記事から作ります!上手にできるかはわかりませんが、一生懸命作ります!!ぜひ食べに来てください", image: './image/logos/IE3.webp', alt: "IE3", location: "実習棟横", id: 'ie_third'},
                     {title: 'CA4', desc: "私たちCA4はチョコバナナとカフェラテを提供します。甘いものでリラックスして、高専祭をぜひ楽しんでください!", image: './image/logos/CA4.webp', alt: "CA4", location: '実習棟横', id: 'ca_fourth'},
+                    {title: 'CA3', desc: 'こんにちは!CA3です！私たちはひとくちパイの屋台を出します。たこ焼き器で作るので、多bやすいサイズで可愛さ抜群です!!ぜひ食べに来てください!', image: './image/logos/CA3.webp', alt: 'CA3', location: '実習棟横', id: 'ca_third'},
                     {title: "CA2", desc: 'こんにちは！CA2です！私達は「CA gram」フォトスポットを制作しました!!沢山のフォトスポットで友達と家族と、気になるあの人と…インスタ映えする写真を撮りませんか？CAの魅力が詰まったポスターも見ものです！', image: './image/logos/CA2.webp', alt: 'CA2', location: 'CA2教室', id: 'ca_second'},
                     {title: "メカトロシステム部", desc: "こんにちは！メカトロシステム部はクレーンゲーム、射的、風船割りの出店をします。クレーンゲームはメカトロシステム部が1から製作したものです。興味のある方はぜひ来てください！", image: './image/logos/meka.webp', alt: "ロボコン", location: "談話室前", id: 'robo'},
                     {title: "茶道部", desc: "こんにちは！茶道部です。私達はお茶会をしています。作法を知らなくても気軽に参加していただけます。無料で美味しい和菓子とお抹茶を用意していますので、ぜひお越しください♪", image: './image/logos/otya.webp', alt: "茶道部", location: "小会議室1", id: 'otya'},
@@ -88,65 +89,79 @@ append content
                 each event in eventsWithoutImg
                     +withoutImg(event.title, event.desc, event.location)
 
+                .withoutimg
+                    h3.card_title テラス計画
+                    p.card_location 高城寮テラス、合宿所
+                    p.card_content テラス計画は2021年12月から寮食堂周辺にテラス席を設けるため、家具や植栽の設計制作活動をしてきました。高専祭イベント「ダベるテラス」では合宿所とテラスを開放&イベントを開催します！是非ダベりに来てください！
+                        br
+                        a(href='./pdfjs/web/viewer.html?file=../../image/terrace.pdf' target='_blank' class='dormitory')
+                            img(src='./image/terraceIcon.webp' alt='テラス企画')
+
         article#info.content
-            h2.section_title アクセス/マップ
+            h2.section_title スケジュール/マップ
             .wrap
-                .access
-                    h3 バス
-                    p.access_content
-                        |・JR徳山駅前から防長交通バス<br>
-                        |「久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円<br>
-                        |「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円<br>
-                        |・JR櫛ヶ浜駅から防長交通バス<br>
-                        |「徳山高専」行に乗車、「高専正門」下車すぐ<br>
-                        |※運賃は異なる場合がございますので、多めの準備をお願いします<br>
-                    a(href='./image/bus.webp' target='_blank') シャトルバス運行表はこちら
+                .schedule.info_content
+                    h3 スケジュール
+                    a(href='./image/schedule.webp' target='_blank') スケジュールはこちら
 
-                    h3 車
-                    p.access_content 山陽自動車道 徳山東インターから約5分
-
-                    h3 タクシー
-                    p.access_content JR徳山駅から約15分JR櫛ヶ浜駅から約10分
-                .info_content
+                .info_content.info_content
                     h3 マップ
                     .maps
                         p
                             a(href='./image/widemap.webp' target='_blank') 全体マップはこちら
                         p
                             a(href='./image/insidemap.webp' target='_blank') 校内マップはこちら
-
+                .access.info_content
+                    section
+                        h3 バス
+                        p.access_content
+                            |・JR徳山駅前から防長交通バス<br>
+                            |「久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円<br>
+                            |「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円<br>
+                            |・JR櫛ヶ浜駅から防長交通バス<br>
+                            |「徳山高専」行に乗車、「高専正門」下車すぐ<br>
+                            |※運賃は異なる場合がございますので、多めの準備をお願いします<br>
+                        a(href='./image/bus.webp' target='_blank') シャトルバス運行表はこちら
+                    section
+                        h3 車
+                        p.access_content 山陽自動車道 徳山東インターから約5分
+                    section
+                        h3 タクシー
+                        p.access_content JR徳山駅から約15分JR櫛ヶ浜駅から約10分
         article#sponsor.content
             h2.section_title スポンサー
             .wrap
-                a(href='./pdfjs/web/viewer.html?file=../../image/sponsor.pdf') スポンサー
+                h3.sponsor_content 今年度も多くのスポンサーの皆様のご支援のもと運営しております。
+                a(href='./pdfjs/web/viewer.html?file=../../image/sponsor.pdf' target='_blank' class='sponsor_btn')
+                    img(src='./image/sponsor.webp' alt='スポンサーの皆様')
 
         article#dept.content
             .wrap
                 h2.section_title 部署紹介
                 .dept_content
-                    ul.dept_list
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/honbu.pdf' target='_blank') 本部
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/main.pdf' target='_blank') メイン部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/guidance.pdf' target='_blank') 案内部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/robo.pdf' target='_blank') ロボコン部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/cleanup.pdf' target='_blank') 美化部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/store.pdf' target='_blank') 模擬店部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/sponsor.pdf' target='_blank') スポンサー部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/enshutu.pdf' target='_blank') 演出部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/stage.pdf' target='_blank') ステージ部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/venue.pdf' target='_blank') 会場部署
-                        li
-                            a(href='./pdfjs/web/viewer.html?file=../../image/depts/relation.pdf' target='_blank') 広報部署
+                    .dept_list
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/honbu.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/honbu.webp' alt='本部')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/main.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/main.webp' alt='メイン部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/guidance.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/guidance.webp' alt='案内部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/robo.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/robo.webp' alt='ロボコン部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/cleanup.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/clean.webp' alt='美化部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/store.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/store.webp' alt='模擬店部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/sponsor.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/sponsor.webp' alt='スポンサー部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/enshutu.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/enshutu.webp' alt='演出部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/stage.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/stage.webp' alt='ステージ部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/venue.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/venue.webp' alt='会場部署')
+                        a(href='./pdfjs/web/viewer.html?file=../../image/depts/relation.pdf' target='_blank' class='dept_item')
+                            img(src='./image/depts/relation.webp' alt='広報部署')
 
         article#greeting.content
             h2.section_title ご挨拶
@@ -186,7 +201,6 @@ append content
         a(href='#about')
         a(href='#event')
         a(href='#info')
-        a(href='#sns')
         a(href='#sponsor')
         a(href='#dept')
         a(href='#greeting')
