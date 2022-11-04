@@ -61,6 +61,7 @@ body {
     font-size: 16px;
   }
   .modal {
+    text-align: center;
     color: $fontColor;
     padding: 1em;
     border: none;
@@ -73,7 +74,15 @@ body {
       width: 600px;
     }
     a {
+      display: block;
       text-decoration: none;
+    }
+    #modal_btn {
+      font-size: 1.2em;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+      border-radius: 0.4em;
+      background-color: #fff;
+      border: solid $stroke 1px;
     }
   }
   #top {
