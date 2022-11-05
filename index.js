@@ -11,10 +11,10 @@ modal.addEventListener(
   false
 );
 
-const modalBtn = document.querySelector('#modal_btn');
-modalBtn.addEventListener('click', (e) => {
+const modalBtn = document.querySelector("#modal_btn");
+modalBtn.addEventListener("click", (e) => {
   modal.close();
-})
+});
 
 const content = document.querySelector(".modal_content");
 content.addEventListener(
