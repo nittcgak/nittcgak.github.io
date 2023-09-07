@@ -112,3 +112,9 @@ p{
   width: 80%;
   margin:0 auto;
 }
+
+.all:hover{
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
