@@ -14,8 +14,14 @@ h1{
   color: rgb(110, 143, 179);
 }
 
+h3{
+  color: rgb(86, 113, 141);
+}
+
 a {
-  text-decoration: none;
+  text-decoration:none;
+	border-bottom:1px dotted rgb(146, 184, 224);
+  color: rgb(110, 143, 179);
 }
 
 .image-top{
@@ -83,7 +89,10 @@ p{
 .flyer a{
   display: block;
   margin-top:  40px;
+  text-decoration:none;
+  border-bottom:1px dotted white;
 }
+
 
 .up{
   font-size: 20px;
@@ -91,19 +100,15 @@ p{
 
 .sche-map-title{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .flyer{
   margin-bottom: 100px;
 }
 
-.schedule{
+.sche-map{
+  color: slategray;
   width: 80%;
-  margin: 0 auto;
+  margin:0 auto;
 }
-
-.map{
-  width: 80%;
-  margin: 0 auto;
-}
-
