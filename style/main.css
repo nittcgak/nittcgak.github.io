@@ -22,7 +22,9 @@ a {
   text-decoration:none;
 	border-bottom:1px dotted rgb(146, 184, 224);
   color: rgb(110, 143, 179);
+  font-size: 25px;
 }
+
 
 .image-top{
   width:100%;
@@ -113,7 +115,39 @@ p{
   margin:0 auto;
 }
 
-.all:hover{
+.sche-map h3{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sche-map a{
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+}
+
+.all{
+  margin-right: 20px;
+}
+
+.sche{
+  display: inline-block;
+  margin-bottom:20px;
+}
+
+.all:hover {
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
+
+.sche:hover{
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
+
+.in_school:hover{
   border-bottom:1px dotted rgb(84, 150, 221);
   /* color: rgb(110, 143, 179); */
   color: rgb(84, 150, 221);
