@@ -14,9 +14,17 @@ h1{
   color: rgb(110, 143, 179);
 }
 
-a {
-  text-decoration: none;
+h3{
+  color: rgb(86, 113, 141);
 }
+
+a {
+  text-decoration:none;
+	border-bottom:1px dotted rgb(146, 184, 224);
+  color: rgb(110, 143, 179);
+  font-size: 25px;
+}
+
 
 .image-top{
   width:100%;
@@ -83,7 +91,10 @@ p{
 .flyer a{
   display: block;
   margin-top:  40px;
+  text-decoration:none;
+  border-bottom:1px dotted white;
 }
+
 
 .up{
   font-size: 20px;
@@ -91,8 +102,57 @@ p{
 
 .sche-map-title{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .flyer{
   margin-bottom: 100px;
+}
+
+.sche-map{
+  color: slategray;
+  width: 80%;
+  margin:0 auto;
+}
+
+.sche-map h3{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sche-map a{
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+}
+
+.all{
+  margin-right: 20px;
+}
+
+.sche{
+  display: inline-block;
+  margin-bottom:20px;
+}
+
+.all:hover {
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
+
+.sche:hover{
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
+
+.in_school:hover{
+  border-bottom:1px dotted rgb(84, 150, 221);
+  /* color: rgb(110, 143, 179); */
+  color: rgb(84, 150, 221);
+}
+
+.bus{
+  font-size: 18px;
 }
