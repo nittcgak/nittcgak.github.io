@@ -2,9 +2,7 @@
 
   const $button = document.getElementsByClassName('buttons');
   const $main = document.getElementById('js-main');
-  console.log($main);
   const $content = $main.querySelectorAll('[data-content]');
-  console.log($content);
 
   //初期化
   const init = () => {
