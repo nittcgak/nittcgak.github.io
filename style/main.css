@@ -3,11 +3,12 @@
   margin:0px;
   padding: 0px;
   background-color: rgb(250, 250, 251);
+  font-family: "Noto Sans Japanese";
 }
 
 body {
   margin: 0;
-  font-family: "Noto Sans Japanese";
+  
 }
 
 header{
@@ -20,6 +21,7 @@ header{
 
 button{
   width: 23%;
+  border-radius: 4px;
 }
 
 .hidden{
