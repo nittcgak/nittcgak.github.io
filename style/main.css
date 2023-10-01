@@ -10,6 +10,10 @@ body {
   font-family: "Noto Sans Japanese";
 }
 
+header{
+  margin:20px 0 ;
+}
+
 .select{
   text-align: center;
 }

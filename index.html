@@ -19,9 +19,8 @@
       <button class="buttons" id="button4">ボタン4</button>
     </div>
   </header>
-
-  <main>
-    <div class="top hidden" id="js-top">
+  <div id="js-main">
+    <div class="top hidden" data-content="0">
       <img class="image-top" src="image/表紙1.png" alt="a">
       <div class="tema">
         <h1>さぁ、行こう。</h1>
@@ -32,7 +31,7 @@
 
 
     <!--  模擬店 -->
-    <div class="mogiten hidden" id="js-mogi">
+    <div class="mogiten hidden" data-content="1">
       <div class="mogiten-title">
         <h1>模擬店</h1>
       </div>
@@ -42,7 +41,7 @@
     </div>
 
     <!-- ぱんふれっと -->
-    <div class="flyer hidden" id="js-flyer">
+    <div class="flyer hidden" data-content="2">
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
         <a class="panp_link" href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG"
@@ -52,7 +51,7 @@
     </div>
 
     <!-- スケジュールとマップ -->
-    <div class="sche-map hidden" id="js-scheMap">
+    <div class="sche-map hidden" data-content="3">
       <div class="container">
         <div class="sche-map-title">
           <h1>スケジュール/マップ</h1>
@@ -77,7 +76,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
   <script src="js/app.js"></script>
 </body>
 
