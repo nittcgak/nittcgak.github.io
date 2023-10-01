@@ -10,6 +10,18 @@ body {
   font-family: "Noto Sans Japanese";
 }
 
+.select{
+  text-align: center;
+}
+
+button{
+  width: 23%;
+}
+
+.hidden{
+  display: none;
+}
+
 h1{
   color: rgb(110, 143, 179);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,30 @@
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/smartphone.css">
 </head>
+
 <body>
-  <div class="main">
-    <div >
+  <header>
+    <div class="select">
+      <button class="buttons" id="button1">ボタン1</button>
+      <button class="buttons" id="button2">ボタン2</button>
+      <button class="buttons" id="button3">ボタン3</button>
+      <button class="buttons" id="button4">ボタン4</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="top hidden" id="js-top">
       <img class="image-top" src="image/表紙1.png" alt="a">
+      <div class="tema">
+        <h1>さぁ、行こう。</h1>
+        <p>テーマの説明高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。
+          このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。</p>
+      </div>
     </div>
-    <div class="tema">
-      <h1>さぁ、行こう。</h1>
-      <p>テーマの説明高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。 このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。</p>
-    </div>
-    <div class="mogiten">
+
+
+    <!--  模擬店 -->
+    <div class="mogiten hidden" id="js-mogi">
       <div class="mogiten-title">
         <h1>模擬店</h1>
       </div>
@@ -25,14 +40,19 @@
         <p>模擬店の説明</p>
       </div>
     </div>
-    <div class="flyer">
+
+    <!-- ぱんふれっと -->
+    <div class="flyer hidden" id="js-flyer">
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
-        <a class="panp_link" href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG" alt=""></a>
+        <a class="panp_link" href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG"
+            alt=""></a>
       </div>
       <p class="up">↑パンフレットはこちらから</p>
     </div>
-    <div class="sche-map">
+
+    <!-- スケジュールとマップ -->
+    <div class="sche-map hidden" id="js-scheMap">
       <div class="container">
         <div class="sche-map-title">
           <h1>スケジュール/マップ</h1>
@@ -57,6 +77,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
