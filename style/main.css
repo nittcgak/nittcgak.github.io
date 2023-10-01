@@ -22,6 +22,7 @@ header{
 button{
   width: 23%;
   border-radius: 4px;
+  border: 2px solid black;
 }
 
 .hidden{
