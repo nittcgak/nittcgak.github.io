@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,138 @@
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/smartphone.css">
 </head>
+
 <body>
-  <div class="main">
-    <div >
+  <header>
+    <div class="select">
+      <button class="buttons" id="button1">ホーム</button>
+      <button class="buttons" id="button2">模擬店</button>
+      <button class="buttons" id="button3">パンフレット</button>
+      <button class="buttons" id="button4">スケジュール/マップ</button>
+    </div>
+  </header>
+  <div class="header-bottom-space" id="header-space"></div>
+  <div id="js-main">
+    <div class="top hidden" data-content="0">
       <img class="image-top" src="image/表紙1.png" alt="a">
+      <div class="tema">
+        <h1>さぁ、行こう。</h1>
+        <p>テーマの説明高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。
+          このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。</p>
+      </div>
     </div>
-    <div class="tema">
-      <h1>さぁ、行こう。</h1>
-      <p>テーマの説明高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。 このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。</p>
-    </div>
-    <div class="mogiten">
+
+
+    <!--  模擬店 -->
+    <div class="mogiten hidden" data-content="1">
       <div class="mogiten-title">
         <h1>模擬店</h1>
       </div>
-      <div class="contents">
-        <p>模擬店の説明</p>
+      <h3>クラス模擬店</h3>
+      <div class="mogi-contents">
+        <div class="shop">
+          <a href="">
+            <img class="goast" src="image/クラス模擬店/1年生企画.png" alt="">
+          </a>
+          <div class="holder">一年生</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/CA2.jpg" alt="">
+          </a>
+          <div class="holder">CA2</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/IE2.jpg" alt="">
+          </a>
+          <div class="holder">IE2</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/IE3 塩味.jpg" alt="">
+          </a>
+          <div class="holder">IE3</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/ME3.jpg" alt="">
+          </a>
+          <div class="holder">ME3</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/CA4.JPEG" alt="">
+          </a>
+          <div class="holder">CA4</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/IE4 情報処理センターに修正.png" alt="">
+          </a>
+          <div class="holder">IE4</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/IE5.jpg" alt="">
+          </a>
+          <div class="holder">IE5</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/IE企画.jpeg" alt="">
+          </a>
+          <div class="holder">IE企画</div>
+        </div>
+        <div class="shop">
+          <a href="">
+            <img src="image/クラス模擬店/ME企画.jpeg" alt="">
+          </a>
+          <div class="holder">ME企画</div>
+        </div>
+        <div class="shop pc-only"></div>
+        <div class="shop pc-only"></div>
       </div>
     </div>
-    <div class="flyer">
+
+    <!-- ぱんふれっと -->
+    <div class="flyer hidden" data-content="2">
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
-        <a href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG" alt=""></a>
+        <a class="panp_link" href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG"
+            alt=""></a>
       </div>
-      <p class="up">☝️パンフレットはこちらから</p>
+      <p class="up">↑パンフレットはこちらから</p>
     </div>
-  <div class="sche-map">
-    <div class="container">
-      <div class="sche-map-title">
-        <h1>スケジュール/マップ</h1>
-      </div>
 
+    <!-- スケジュールとマップ -->
+    <div class="sche-map hidden" data-content="3">
+      <div class="container">
+        <div class="sche-map-title">
+          <h1>スケジュール/マップ</h1>
+        </div>
+        <div class="schedule">
+          <h3>スケジュール</h3>
+          <a class="sche" href="#">スケジュールはこちら</a>
+        </div>
+        <div class="map">
+          <h3>マップ</h3>
+          <a class="all" href="#">全体マップはこちら</a>
+          <a class="in_school" href="#">校内マップはこちら</a>
+        </div>
+        <div class="bus">
+          <ul class="bus-contents">
+            <li>JR徳山駅前から防長交通バス</li>
+            久米温泉口」行に乗車、「大学高専下」下車徒歩10分、運賃260円「徳山高専」行に乗車、「高専正門」下車すぐ、運賃260円
+            <li>JR櫛ヶ浜駅から防長交通バス</li>
+            「徳山高専」行に乗車、「高専正門」下車すぐ
+            ※運賃は異なる場合がございますので、多めの準備をお願いします
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
+  <script src="js/button.js"></script>
 </body>
+
 </html>

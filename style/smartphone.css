@@ -10,19 +10,27 @@
 
   p{
     font-size: 20px;
-    width:85%;
+    width:80%;
   }
 
   .tema p{
     padding:10px 0px 50px 0px;
     margin-bottom: 0px;
   }
-}
 
-.flyer-img{
-  width: 60%;
-}
+  .flyer-img{
+    width: 60%;
+  }
+  
+  .cover{
+    width: 70%;
+  }
 
-.cover{
-  width: 70%;
+  .shop{
+    width: 50%;
+    height: 250px;
+  }
+  .pc-only{
+    display: none;
+  }
 }
