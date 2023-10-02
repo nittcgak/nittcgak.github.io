@@ -35,7 +35,6 @@ button {
 }
 
 
-
 .button-active {
   text-decoration: underline rgb(247, 248, 248) 2.1px;
 }
@@ -96,6 +95,10 @@ p {
 .mogiten {
   margin-bottom: 100px;
   text-align: center;
+}
+
+.mogiten a{
+  border-bottom: none;
 }
 
 .mogiten-title {
