@@ -25,5 +25,12 @@
   .cover{
     width: 70%;
   }
-}
 
+  .shop{
+    width: 50%;
+    height: 250px;
+  }
+  .pc-only{
+    display: none;
+  }
+}
