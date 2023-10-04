@@ -106,21 +106,27 @@ p {
 
 }
 
-.mogi-botton{
+.mogi-button{
+  flex: auto;
+  font-size: 25px;
+  margin: 20px;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.mogi-buttons{
   display: flex;
   text-align: center;
 }
 
-.mogi-botton a{
-  flex: auto;
-  display: inline;
-  width: 50px;
-  border-bottom: none;
+.mogi-button-negactive{
+  opacity: 0.3;
 }
 
 .void{
   display: inline;
-  width: 200px;
+  /* width: 200px; */
+  width: 25%;
 }
 
 .class-contents,.club-contents {
