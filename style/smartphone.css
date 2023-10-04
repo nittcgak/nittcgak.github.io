@@ -28,7 +28,7 @@
 
   .shop{
     width: 50%;
-    height: 220px;
+    height: 200px;
   }
   .pc-only{
     display: none;
@@ -36,7 +36,7 @@
 
   .mogi-button{
     width: 30%;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 0.7em;
     padding-right: 0.7em;
   }
@@ -44,4 +44,13 @@
   .void{
     width: 20%;
   }
+
+  .shop{
+    margin-bottom: 50px;
+  }
+
+  .holder{
+    top:110%;
+  }
+
 }
