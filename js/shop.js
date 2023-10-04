@@ -1,12 +1,13 @@
 (() => {
   const $button = document.getElementsByClassName('mogi-button');
-  console.log($button);
   const $contents = document.getElementsByClassName('js-mogi-wrapper');
 
   //初期化
   const init = () => {
     $contents[0].classList.remove("hidden");
-    $button[1].classList.add("mogi-button-negactive");
+    for(let i=1;i<$button.length;i++){
+      $button[i].classList.add("mogi-button-negactive");
+    }
   };
   init();
 
