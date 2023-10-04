@@ -33,4 +33,15 @@
   .pc-only{
     display: none;
   }
+
+  .mogi-button{
+    width: 30%;
+    font-size: 20px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+
+  .void{
+    width: 20%;
+  }
 }
