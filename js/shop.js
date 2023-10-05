@@ -20,7 +20,7 @@
       classname: 'class1',
       location: 'location1',
       text: 'text1',
-      url:
+      url
     }, {
       classname: 'class2',
       location: 'location2',
@@ -64,58 +64,58 @@
     }, {
       classname: 'class10',
       location: 'location10',
-      text: 'text10,
-      url'
+      text: 'text10',
+      url
     }, {
       classname: 'class11',
       location: 'location11',
-      text: 'text11,
-      url'
+      text: 'text11',
+      url
     }, {
       classname: 'class12',
       location: 'location12',
-      text: 'text12,
-      url'
+      text: 'text12',
+      url
     }, {
       classname: 'class13',
       location: 'location13',
-      text: 'text13,
-      url'
+      text: 'text13',
+      url
     }, {
       classname: 'class14',
       location: 'location14',
-      text: 'text14,
-      url'
+      text: 'text14',
+      url
     }, {
       classname: 'class15',
       location: 'location15',
-      text: 'text15,
-      url'
+      text: 'text15',
+      url
     }, {
       classname: 'class16',
       location: 'location16',
-      text: 'text16,
-      url'
+      text: 'text16',
+      url
     }, {
       classname: 'class17',
       location: 'location17',
-      text: 'text17,
-      url'
+      text: 'text17',
+      url
     }, {
       classname: 'class18',
       location: 'location18',
-      text: 'text18,
-      url'
+      text: 'text18',
+      url
     }, {
       classname: 'class19',
       location: 'location19',
-      text: 'text19,
-      url'
+      text: 'text19',
+      url
     }, {
       classname: 'class20',
       location: 'location20',
-      text: 'text20,
-      url'
+      text: 'text20',
+      url
     }
   ];
 
