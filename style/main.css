@@ -158,6 +158,10 @@ p {
   z-index: 2;
 }
 
+#push-img{
+  height: 200px;
+}
+
 .class-contents,.club-contents {
   display: flex;
   flex-wrap: wrap;
