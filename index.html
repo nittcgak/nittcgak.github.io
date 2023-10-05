@@ -43,66 +43,74 @@
         <button class="mogi-button">部活模擬店</button>
         <div class="void"></div>
       </div>
-      <div class="mogi-contents">
+      <!-- 模擬店全体のdiv -->
+      <div class="mogi-contents" id="js-shop-wrapper">
+        <!-- 押された時の挙動 -->
+        <div id="mask" class="hidden"></div>
+        <section id="modal" class="hidden">
+          <p id="js-class">class</p>
+          <p id="js-location">location</p>
+          <p id="js-text">text</p>
+        </section>
         <!-- クラスの模擬店 -->
         <div class="class-wrapper hidden js-mogi-wrapper">
           <div class="class-contents js-mogi-contents">
             <div class="shop">
-              <a href="">
+              <a href="" data-link="0">
                 <img class="goast" src="image/クラス模擬店/1年生.jpg" alt="">
               </a>
               <div class="holder">一年生</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="1">
                 <img src="image/クラス模擬店/CA2.jpg" alt="">
               </a>
               <div class="holder">CA2</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="2">
                 <img src="image/クラス模擬店/IE2.jpg" alt="">
               </a>
               <div class="holder">IE2</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="3">
                 <img src="image/クラス模擬店/IE3 塩味.jpg" alt="">
               </a>
               <div class="holder">IE3</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="4">
                 <img src="image/クラス模擬店/ME3.jpg" alt="">
               </a>
               <div class="holder">ME3</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="5">
                 <img src="image/クラス模擬店/CA4.JPEG" alt="">
               </a>
               <div class="holder">CA4</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="6">
                 <img src="image/クラス模擬店/IE4.PNG" alt="">
               </a>
               <div class="holder">IE4</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="7">
                 <img src="image/クラス模擬店/IE5.jpg" alt="">
               </a>
               <div class="holder">IE5</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="8">
                 <img src="image/クラス模擬店/IE企画.jpeg" alt="">
               </a>
               <div class="holder">IE企画</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="9">
                 <img src="image/クラス模擬店/ME企画.jpeg" alt="">
               </a>
               <div class="holder">ME企画</div>
@@ -116,67 +124,67 @@
         <div class="club-wrapper hidden js-mogi-wrapper">
           <div class="club-contents hidden js-mogi-contents">
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/サッカー部.jpg" alt="">
               </a>
               <div class="holder">サッカー部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/テラス計画.jpg" alt="">
               </a>
               <div class="holder">テラス計画</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/ニューメディア部.jpg" alt="">
               </a>
               <div class="holder shift">ニューメディア部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/バドミントン部.jpg" alt="">
               </a>
               <div class="holder shift">バドミントン部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/園芸同好会.png" alt="">
               </a>
               <div class="holder">園芸同好会</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/写真部.png" alt="">
               </a>
               <div class="holder">写真部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/吹奏楽.jpg" alt="">
               </a>
               <div class="holder">吹奏楽部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/卓球部.JPG" alt="">
               </a>
               <div class="holder">卓球部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/男子バスケ部.png" alt="">
               </a>
               <div class="holder">男子バスケ部</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/伝統文化同好会.JPG" alt="">
               </a>
               <div class="holder shift">伝統文化同好会</div>
             </div>
             <div class="shop">
-              <a href="">
+              <a href="" data-link="">
                 <img src="image/部活模擬店/美術部.jpg" alt="">
               </a>
               <div class="holder">美術部</div>
@@ -226,6 +234,7 @@
     </div>
   </div>
   <script src="js/button.js"></script>
+  <script src="js/mogi-button.js"></script>
   <script src="js/shop.js"></script>
 </body>
 

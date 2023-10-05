@@ -32,9 +32,8 @@ button {
   border-radius: 4px;
   border: none;
   /* color: rgb(82, 100, 119); */
+  cursor: pointer;
 }
-
-
 
 .button-active {
   text-decoration: underline rgb(247, 248, 248) 2.1px;
@@ -118,6 +117,7 @@ p {
   border-radius: 10px;
 }
 
+
 .mogi-buttons{
   display: flex;
   text-align: center;
@@ -131,6 +131,31 @@ p {
   display: inline;
   /* width: 200px; */
   width: 33%;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  width: 70%;
+  height: 70%;
+  padding: 24px;
+  border-radius: 4px;
+  color: red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 .class-contents,.club-contents {
@@ -167,6 +192,7 @@ p {
   /*widthの指定は必須*/
   height: 80%;
   /*heightの指定は必須*/
+  cursor: pointer;
 }
 
 .shop img {
