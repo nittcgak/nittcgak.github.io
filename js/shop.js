@@ -1,7 +1,6 @@
 (() => {
   const $shopWrapper = document.getElementById('js-shop-wrapper');
   const $link = document.getElementsByClassName('shop-a');
-  console.log($link);
   const $mask = document.getElementById('mask');
   const $modal = document.getElementById('modal');
   const $img = document.getElementById('push-img');
@@ -98,18 +97,12 @@
     }
   ];
 
-  console.log(shopExplation[0].location);
-  $location.textContent = shopExplation[1].location;
-
-
   $mask.addEventListener('click', () => {
     $mask.classList.add('hidden');
     $modal.classList.add('hidden');
   });
 
   //クリックされた時の挙動
-  
-
   for (let i = 0; i < $link.length; i++) {
     $link[i].addEventListener('click', function (e) {
       e.preventDefault();
@@ -120,38 +113,4 @@
       $text.textContent = shopExplation[i].text;
     });
   }
-
-
-  //全てのnav要素に対して関数を適応
-    $link[0].addEventListener('click',function(e){
-      // e.preventDefault();
-  
-      $mask.classList.remove('hidden');
-      $modal.classList.remove('hidden');
-      console.log($class.textContent);
-      console.log(0);
-      $img.src=shopExplation[0].url;
-      $class.textContent = shopExplation[0].classname;
-      $location.textContent = shopExplation[0].location;
-      $text.textContent = shopExplation[0].text;
-      e.preventDefault();
-      console.log(0);
-    });
-
-    $link[1].addEventListener('click',function(e){
-      // e.preventDefault();
-  
-      // $mask.classList.remove('hidden');
-      // $modal.classList.remove('hidden');
-      // console.log($class.textContent);
-      // console.log(index);
-      // $class.textContent = shopExplation[index].classname;
-      // $location.textContent = shopExplation[index].location;
-      // $text.textContent = shopExplation[index].text;
-      e.preventDefault();
-      console.log(1);
-    });
-
-
-
 })();
