@@ -14,108 +14,87 @@
     {
       classname: 'class0',
       location:  'location0',
-      text: 'text0',
-      url : 'image/クラス模擬店/1年生.jpg'
+      text: 'text0' 
     }, {
       classname: 'class1',
       location: 'location1',
-      text: 'text1',
-      url
+      text: 'text1'
     }, {
       classname: 'class2',
       location: 'location2',
-      text: 'text2',
-      url
+      text: 'text2'
     }, {
       classname: 'class3',
       location: 'location3',
-      text: 'text3',
-      url
+      text: 'text3'
     }, {
       classname: 'class4',
       location: 'location5',
-      text: 'text4',
-      url
+      text: 'text4'
     }, {
       classname: 'class5',
       location: 'location5',
-      text: 'text5',
-      url
+      text: 'text5'
     }, {
       classname: 'class6',
       location: 'location6',
-      text: 'text6',
-      url
+      text: 'text6'
     }, {
       classname: 'class7',
       location: 'location7',
-      text: 'text7',
-      url
+      text: 'text7'
     }, {
       classname: 'class8',
       location: 'location8',
-      text: 'text8',
-      url
+      text: 'text8'
     }, {
       classname: 'class9',
       location: 'location9',
-      text: 'text9',
-      url
+      text: 'text9'
     }, {
       classname: 'class10',
       location: 'location10',
-      text: 'text10',
-      url
+      text: 'text10'
     }, {
       classname: 'class11',
       location: 'location11',
-      text: 'text11',
-      url
+      text: 'text11'
     }, {
       classname: 'class12',
       location: 'location12',
-      text: 'text12',
-      url
+      text: 'text12'
     }, {
       classname: 'class13',
       location: 'location13',
-      text: 'text13',
-      url
+      text: 'text13'
     }, {
       classname: 'class14',
       location: 'location14',
-      text: 'text14',
-      url
+      text: 'text14'
     }, {
       classname: 'class15',
       location: 'location15',
-      text: 'text15',
-      url
+      text: 'text15'
     }, {
       classname: 'class16',
       location: 'location16',
-      text: 'text16',
-      url
+      text: 'text16'
     }, {
       classname: 'class17',
       location: 'location17',
-      text: 'text17',
-      url
+      text: 'text17'
     }, {
       classname: 'class18',
       location: 'location18',
-      text: 'text18',
-      url
+      text: 'text18'
     }, {
       classname: 'class19',
       location: 'location19',
-      text: 'text19',
-      url
+      text: 'text19'
     }, {
       classname: 'class20',
       location: 'location20',
-      text: 'text20',
-      url
+      text: 'text20'
     }
   ];
 
