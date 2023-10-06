@@ -10,113 +10,110 @@
 
   const shopExplation = [
     {
-      classname: 'class0',
+      classname: '一年生',
       location:  'location0',
       text: 'text0',
-      url:; 
-
-
-
+      url:"image/クラス模擬店/1年生.jpg"
     }, {
-      classname: 'class1',
+      classname: 'CA2',
       location: 'location1',
       text: 'text1',
-      url:;
+      url:"image/クラス模擬店/CA2.jpg"
     }, {
-      classname: 'class2',
+      classname: 'IE2',
       location: 'location2',
       text: 'text2',
-      url:;
+      url:"image/クラス模擬店/IE2.jpg"
     }, {
-      classname: 'class3',
+      classname: 'IE3',
       location: 'location3',
       text: 'text3',
-      url:;
+      url:"image/クラス模擬店/IE3 塩味.jpg"
     }, {
-      classname: 'class4',
+      classname: 'ME3',
       location: 'location5',
       text: 'text4',
-      url:;
+      url:"image/クラス模擬店/ME3.jpg"
     }, {
-      classname: 'class5',
+      classname: 'CA4',
       location: 'location5',
       text: 'text5',
-      url:;
+      url:"image/クラス模擬店/CA4.JPEG"
     }, {
-      classname: 'class6',
+      classname: 'IE4',
       location: 'location6',
       text: 'text6',
-      url:;
+      url:"image/クラス模擬店/IE4.PNG"
     }, {
-      classname: 'class7',
+      classname: 'IE5',
       location: 'location7',
       text: 'text7',
-      url:;
+      url:"image/クラス模擬店/IE5.jpg"
     }, {
-      classname: 'class8',
+      classname: 'IE企画',
       location: 'location8',
       text: 'text8',
-      url:;
+      url:"image/クラス模擬店/IE企画.jpeg"
     }, {
-      classname: 'class9',
+      classname: 'ME企画',
       location: 'location9',
       text: 'text9',
-      url:;
+      url:"image/クラス模擬店/ME企画.jpeg"
     }, {
-      classname: 'class10',
+      classname: 'サッカー部',
       location: 'location10',
       text: 'text10',
-      url:;
+      url:"image/部活模擬店/サッカー部.jpg"
     }, {
-      classname: 'class11',
+      classname: 'テラス計画',
       location: 'location11',
       text: 'text11',
-      url:;
+      url:"image/部活模擬店/テラス計画.jpg"
     }, {
-      classname: 'class12',
+      classname: 'ニューメディア部',
       location: 'location12',
       text: 'text12',
-      url:;
+      url:"image/部活模擬店/ニューメディア部.jpg"
     }, {
-      classname: 'class13',
+      classname: 'バドミントン部',
       location: 'location13',
       text: 'text13',
-      url:;
+      url:"image/部活模擬店/バドミントン部.jpg"
     }, {
-      classname: 'class14',
+      classname: '園芸同好会',
       location: 'location14',
       text: 'text14',
-      url:;
+      url:"image/部活模擬店/園芸同好会.png"
     }, {
-      classname: 'class15',
+      classname: '写真部',
       location: 'location15',
       text: 'text15',
-      url:;
+      url:"image/部活模擬店/写真部.png"
     }, {
-      classname: 'class16',
+      classname: '吹奏楽部',
       location: 'location16',
       text: 'text16',
-      url:;
+      url:"image/部活模擬店/吹奏楽.jpg"
     }, {
-      classname: 'class17',
+      classname: '卓球部',
       location: 'location17',
       text: 'text17',
-      url:;
+      url:"image/部活模擬店/卓球部.JPG"
     }, {
-      classname: 'class18',
+      classname: '男子バスケ部',
       location: 'location18',
       text: 'text18',
-      url:;
+      url:"image/部活模擬店/男子バスケ部.png"
     }, {
-      classname: 'class19',
+      classname: '伝統文化同好会',
       location: 'location19',
       text: 'text19',
-      url:;
+      url:"image/部活模擬店/伝統文化同好会.JPG"
     }, {
-      classname: 'class20',
+      classname: '美術部',
       location: 'location20',
       text: 'text20',
-      url:;
+      url:"image/部活模擬店/美術部.jpg"
     }
   ];
 
