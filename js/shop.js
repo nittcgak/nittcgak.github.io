@@ -128,6 +128,7 @@
       e.preventDefault();
       $mask.classList.remove('hidden');
       $modal.classList.remove('hidden');
+      $img.src=shopExplation[i].url;
       $class.textContent = shopExplation[i].classname;
       $location.textContent = shopExplation[i].location;
       $text.textContent = shopExplation[i].text;
