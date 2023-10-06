@@ -1,5 +1,4 @@
 (() => {
-  const $shopWrapper = document.getElementById('js-shop-wrapper');
   const $link = document.getElementsByClassName('shop-a');
   const $mask = document.getElementById('mask');
   const $modal = document.getElementById('modal');
