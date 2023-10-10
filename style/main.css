@@ -35,6 +35,10 @@ button {
   cursor: pointer;
 }
 
+.buttons{
+  font-size: 18px;
+}
+
 .button-active {
   text-decoration: underline rgb(247, 248, 248) 2.1px;
 }
