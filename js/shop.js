@@ -25,9 +25,15 @@
       text: 'text2',
       url:"image/クラス模擬店/IE2.jpg"
     }, {
-      //ここにME2の要素追加
+      classname: 'ME2',
+      location: 'location2',
+      text: 'text2',
+      url:"image/クラス模擬店/ME2.png"
     },{
-      //ここにCA3の要素追加
+      classname: 'CA3',
+      location: 'location2',
+      text: 'text2',
+      url:"image/クラス模擬店/CA3.png"
     },
     
     {
@@ -121,7 +127,10 @@
       text: 'text20',
       url:"image/部活模擬店/美術部.jpg"
     },{
-      //文芸要素追加
+      classname: '文芸部',
+      location: 'location20',
+      text: 'text20',
+      url:"image/部活模擬店/文芸部.png"
     }
   ];
 
