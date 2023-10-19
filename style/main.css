@@ -162,6 +162,20 @@ p {
   z-index: 2;
 }
 
+.modal-wrapper p{
+  font-size: 25px;
+}
+
+#js-class{
+  margin: 10px 0px 5px 0px;
+  display: inline-block;
+}
+
+#js-location{
+  margin: 5px 0px 10px 0px;
+  display: inline-block;
+}
+
 #push-img{
   height: 200px;
 }
