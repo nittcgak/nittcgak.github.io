@@ -58,7 +58,7 @@
       url:"image/クラス模擬店/IE4.PNG"
     }, {
       classname: 'IE5',
-      location: 'location7',
+      location: '第一体育館前道路',
       text: 'IE5です。焼きたてのたい焼きを販売します！ぜひ買いに来てください！ ',
       url:"image/クラス模擬店/IE5.jpg"
     }, {
