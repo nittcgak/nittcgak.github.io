@@ -67,6 +67,23 @@ a {
   width: 100%;
 }
 
+.terasu-wrapper{
+  display: flex;
+}
+
+.terasu1{
+  width: 50%;
+  display:inline-flex;
+  padding: 20px;
+  padding-left: 100px;
+}
+
+.terasu2{
+  width: 50%;
+  display: inline-flex;
+  padding: 20px;
+  padding-right: 100px;
+}
 
 .tema {
   text-align: center;
