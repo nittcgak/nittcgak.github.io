@@ -135,7 +135,7 @@
       classname: '茶道部',
       location: 'location20',
       text: 'text20',
-      url:"image/部活模擬店/文芸部.png"
+      url:"image/部活模擬店/文芸部.png"//url偏向
     },{
       classname: 'メカトロシステム部',
       location: 'location20',
