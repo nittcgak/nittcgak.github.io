@@ -32,7 +32,7 @@
 
   .shop{
     width: 50%;
-    height: 200px;
+    height: 160px;
   }
   .pc-only{
     display: none;
@@ -55,6 +55,19 @@
 
   .holder{
     top:110%;
+  }
+
+  #js-class{
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+  #js-location{
+    font-size: 13px;
+  }
+
+  #js-text{
+    font-size: 15px;
   }
 
 }

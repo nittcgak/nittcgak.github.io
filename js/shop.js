@@ -10,9 +10,9 @@
 
   const shopExplation = [
     {
-      classname: '一年生',
-      location:  'location0',
-      text: 'text0',
+      classname: '1年生',
+      location:  '1年生教室',
+      text: 'あるところに炎と呼ばれる者の屋敷があった。そこの家主は界といいとても温和な男だった。その性格からかその屋敷に勤める多くの臣下たちから慕われていた。そこは、幸せに満ちていた。あの日までは・・・あの日の記憶を追体験しませんか？',
       url:"image/クラス模擬店/1年生.jpg"
     }, {
       classname: 'CA2',
@@ -128,6 +128,16 @@
       url:"image/部活模擬店/美術部.jpg"
     },{
       classname: '文芸部',
+      location: 'location20',
+      text: 'text20',
+      url:"image/部活模擬店/文芸部.png"
+    },{
+      classname: '茶道部',
+      location: 'location20',
+      text: 'text20',
+      url:"image/部活模擬店/文芸部.png"
+    },{
+      classname: 'メカトロシステム部',
       location: 'location20',
       text: 'text20',
       url:"image/部活模擬店/文芸部.png"
