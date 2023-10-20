@@ -272,6 +272,10 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.holder-mekatoro{
+  top: 105%;
+}
+
 .goast {
   height: 70%;
 }
