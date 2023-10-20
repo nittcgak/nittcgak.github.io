@@ -22,11 +22,22 @@
   <div class="header-bottom-space" id="header-space"></div>
   <div id="js-main">
     <div class="top hidden" data-content="0">
-      <img class="image-top" src="image/表紙1.png" alt="a">
+      <div class="img-wrapper">
+        <img class="image-top" src="image/表紙系/表紙完成版.PNG" alt="a">
+      </div>
       <div class="tema">
-        <h1>さぁ、行こう。</h1>
-        <p>テーマの説明高専祭テーマ「for ∞」には高専祭には無限の可能性があるという強い思いが込められています。
-          このコロナ禍の状況を転換期と捉え、例年行っている各企画に加え、体験型の企画も多数開催しています。私たちの生み出す可能性を、思いを、感じていただけたら幸いです。</p>
+        <h1>さぁ、行こう!</h1>
+        <p>2. テーマ　「さあ、行こう！」
+          これはWBCで日本チームが掛け声として使っていた言葉です。彼らのようにみんなで一つになってこの高専祭を成功させよう！という意味を込めています。また「最高！」とかけて最高の高専祭にしようという意味も込められています。
+        </p>
+        <!-- テラス計画 -->
+        <div class="terasu">
+          <h1 id="terasu">テラス企画</h1>
+          <div class="terasu-wrapper img-wrapper">
+            <img src="image/テラス企画/テラス　ポスター1_page-0001.jpg" alt="" class="terasu1">
+            <img src="image/テラス企画/テラス ポスター2_page-0001.jpg" alt="" class="terasu2">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -47,19 +58,23 @@
       <div class="mogi-contents" id="js-shop-wrapper">
         <!-- 押された時の挙動 -->
         <div id="mask" class="hidden"></div>
-        <section id="modal" class="hidden">
-          <img id="push-img" src="" alt="">
-          <p id="js-class">class</p>
-          <p id="js-location">location</p>
-          <p id="js-text">text</p>
+        <section id="modal" class="hidden modal-wrapper">
+          <div class="push-img-wrapper">
+            <img id="push-img" src="" alt="">
+          </div>
+          <div class="modal-description">
+            <p id="js-class">class</p>
+            <p id="js-location">location</p>
+            <p id="js-text">text</p>
+          </div>
         </section>
         <!-- クラスの模擬店 -->
         <div class="class-wrapper hidden js-mogi-wrapper">
           <div class="class-contents js-mogi-contents">
             <div class="class-mogi">
-          
-        </div>
-        <div class="shop">
+
+            </div>
+            <div class="shop">
               <a href="" class="shop-a">
                 <img class="goast" src="image/クラス模擬店/1年生.jpg" alt="">
               </a>
@@ -76,6 +91,18 @@
                 <img src="image/クラス模擬店/IE2.jpg" alt="">
               </a>
               <div class="holder">IE2</div>
+            </div>
+            <div class="shop">
+              <a href="" class="shop-a">
+                <img src="image/クラス模擬店/ME2.png" alt="">
+              </a>
+              <div class="holder">ME2</div>
+            </div>
+            <div class="shop">
+              <a href="" class="shop-a">
+                <img src="image/クラス模擬店/CA3.png" alt="">
+              </a>
+              <div class="holder">CA3</div>
             </div>
             <div class="shop">
               <a href="" class="shop-a">
@@ -120,92 +147,111 @@
               <div class="holder">ME企画</div>
             </div>
             <!-- 空クラス -->
-            <div class="shop pc-only"></div>
-            <div class="shop pc-only"></div>ï
+            <!-- <div class="shop pc-only"></div>
+            <div class="shop pc-only"></div>ï -->
           </div>
         </div>
         <!-- 部活の模擬店 -->
         <div class="club-wrapper hidden js-mogi-wrapper">
           <div class="club-contents hidden js-mogi-contents">
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/サッカー部.jpg" alt="">
               </a>
               <div class="holder">サッカー部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/テラス計画.jpg" alt="">
               </a>
               <div class="holder">テラス計画</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/ニューメディア部.jpg" alt="">
               </a>
               <div class="holder shift">ニューメディア部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/バドミントン部.jpg" alt="">
               </a>
               <div class="holder shift">バドミントン部</div>
             </div>
             <div class="shop">
               <a href="" class="shop-a"">
-                <img src="image/部活模擬店/園芸同好会.png" alt="">
+                <img src=" image/部活模擬店/園芸同好会.png" alt="">
               </a>
               <div class="holder">園芸同好会</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/写真部.png" alt="">
               </a>
               <div class="holder">写真部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/吹奏楽.jpg" alt="">
               </a>
               <div class="holder">吹奏楽部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/卓球部.JPG" alt="">
               </a>
               <div class="holder">卓球部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/男子バスケ部.png" alt="">
               </a>
               <div class="holder">男子バスケ部</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/伝統文化同好会.JPG" alt="">
               </a>
               <div class="holder shift">伝統文化同好会</div>
             </div>
             <div class="shop">
-              <a href="" class="shop-a"">
+              <a href="" class="shop-a">
                 <img src="image/部活模擬店/美術部.jpg" alt="">
               </a>
               <div class="holder">美術部</div>
             </div>
+            <div class="shop">
+              <a href="" class="shop-a">
+                <img src="image/部活模擬店/文芸部.png" alt="">
+              </a>
+              <div class="holder">文芸部</div>
+            </div>
+            <div class="shop">
+              <a href="" class="shop-a">
+                <img src="image/部活模擬店/茶道部.jpeg" alt="">
+              </a>
+              <div class="holder">茶道部</div>
+            </div>
+            <div class="shop">
+              <a href="" class="shop-a">
+                <img src="image/部活模擬店/メカトロシステム部.png" alt="">
+              </a>
+              <div class="holder holder-mekatoro">メカトロシステム部</div>
+            </div>
             <!-- 空クラス -->
-            <div class="shop"></div>
+            <div class="shop pc-only"></div>
+            <div class="shop pc-only"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ぱんふれっと -->
+    <!-- パンフレット -->
     <div class="flyer hidden" data-content="2">
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
-        <a class="panp_link" href="pdf/tmp.pdf"><img class="cover" width=50% class="hyousi" src="image/表表紙.PNG"
-            alt=""></a>
+        <a class="panp_link" href="pdf/パンフレット2023 カラー版.pdf"><img class="cover" width=50% class="hyousi"
+            src="image/表紙系/表表紙.PNG" alt=""></a>
       </div>
       <p class="up">↑パンフレットはこちらから</p>
     </div>
@@ -217,8 +263,18 @@
           <h1>スケジュール/マップ</h1>
         </div>
         <div class="schedule">
-          <h3>スケジュール</h3>
-          <a class="sche" href="#">スケジュールはこちら</a>
+          <h3>スケジュール1日目</h3>
+          <div class="day-content img-wrapper">
+            <img src="image/スケジュール/IMG_1826.JPG" alt="" class="schedule-img">
+            <img src="image/スケジュール/IMG_1827.JPG" alt="" class="schedule-img pc-only">
+
+          </div>
+          <h3>スケジュール2日目</h3>
+          <div class="day-content img-wrapper">
+            <img src="image/スケジュール/IMG_1828.jpg" alt="" class="schedule-img">
+            <img src="image/スケジュール/IMG_1829.jpg" alt="" class="schedule-img pc-only">
+          </div>
+          <a class="sche" href="pdf/スケジュール.pdf">ダウンロードはこちらから</a>
         </div>
         <div class="map">
           <h3>マップ</h3>

@@ -13,6 +13,10 @@
     width:80%;
   }
 
+  .buttons{
+    font-size: 12px;
+  }
+
   .tema p{
     padding:10px 0px 50px 0px;
     margin-bottom: 0px;
@@ -28,7 +32,7 @@
 
   .shop{
     width: 50%;
-    height: 200px;
+    height: 160px;
   }
   .pc-only{
     display: none;
@@ -53,4 +57,63 @@
     top:110%;
   }
 
+  #js-class{
+    display: inline-block;
+    font-size: 18px;
+  }
+  
+  #js-location{
+    font-size: 15px;
+  }
+
+  #js-text{
+    font-size: 18px;
+  }
+
+  #modal{
+    width: 90%;
+    padding: 7% 0;
+  }
+
+  .terasu-wrapper{
+    display: block;
+    text-align: center;
+  }
+
+  .terasu1{
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding: 0px;
+  }
+  
+  .terasu2{
+    width: 80%;
+    display: inline;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding: 0px;
+  }
+
+  .modal-wrapper p{
+    width: 100%;
+    font-size: 25px;
+  }
+
+  #push-img{
+    height: 150px;
+  }
+
+  .holder-mekatoro{
+    top: 120%;
+  }
+
+  .day-content{
+    display: block;
+  }
+
+  .schedule-img{
+    width:100%;
+  }
 }
