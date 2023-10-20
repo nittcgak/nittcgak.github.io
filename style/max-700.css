@@ -72,9 +72,23 @@
 
   #modal{
     width: 90%;
-    height: 70%;
-    padding: 10px;
+    padding: 7% 0;
+  }
 
+  .terasu-wrapper{
+    display: block;
+  }
+
+  .terasu1{
+    width: 80%;
+    padding: 20px;
+    padding-left: 100px;
+  }
+  
+  .terasu2{
+    width: 80%;
+    padding: 20px;
+    padding-right: 100px;
   }
 
   .modal-wrapper p{
@@ -84,6 +98,9 @@
 
   #push-img{
     height: 150px;
-    margin-top:10%;
+  }
+
+  .holder-mekatoro{
+    top: 120%;
   }
 }
