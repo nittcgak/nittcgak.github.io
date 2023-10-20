@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/smartphone.css">
+  <link rel="stylesheet" href="style/max-700.css">
 </head>
 
 <body>
@@ -53,7 +54,9 @@
         <!-- 押された時の挙動 -->
         <div id="mask" class="hidden"></div>
         <section id="modal" class="hidden modal-wrapper">
-          <img id="push-img" src="" alt="">
+          <div class="push-img-wrapper">
+            <img id="push-img" src="" alt="">
+          </div>
           <div class="modal-description">
             <p id="js-class">class</p>
             <p id="js-location">location</p>

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 700px){
   h1{
     font-size: 30px;
   }
@@ -59,15 +59,15 @@
 
   #js-class{
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   #js-location{
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #js-text{
-    font-size: 18px;
+    font-size: 15px;
   }
 
   #modal{
