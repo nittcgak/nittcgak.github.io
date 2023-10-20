@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/smartphone.css">
-  <link rel="stylesheet" href="style/max-700.css">
 </head>
 
 <body>
@@ -23,7 +22,9 @@
   <div class="header-bottom-space" id="header-space"></div>
   <div id="js-main">
     <div class="top hidden" data-content="0">
-      <img class="image-top" src="image/表紙1.png" alt="a">
+      <div class="img-wrapper">
+        <img class="image-top" src="image/表紙系/表紙完成版.PNG" alt="a">
+      </div>
       <div class="tema">
         <h1>さぁ、行こう!</h1>
         <p>2. テーマ　「さあ、行こう！」
@@ -31,8 +32,8 @@
         </p>
         <!-- テラス計画 -->
         <div class="terasu">
-          <h1>テラス企画</h1>
-          <div class="terasu-wrapper">
+          <h1 id="terasu">テラス企画</h1>
+          <div class="terasu-wrapper img-wrapper">
             <img src="image/テラス企画/テラス　ポスター1_page-0001.jpg" alt="" class="terasu1">
             <img src="image/テラス企画/テラス ポスター2_page-0001.jpg" alt="" class="terasu2">
           </div>
@@ -245,12 +246,12 @@
       </div>
     </div>
 
-    <!-- ぱんふれっと -->
+    <!-- パンフレット -->
     <div class="flyer hidden" data-content="2">
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
         <a class="panp_link" href="pdf/パンフレット2023 カラー版.pdf"><img class="cover" width=50% class="hyousi"
-            src="image/表表紙.PNG" alt=""></a>
+            src="image/表紙系/表表紙.PNG" alt=""></a>
       </div>
       <p class="up">↑パンフレットはこちらから</p>
     </div>
@@ -262,8 +263,18 @@
           <h1>スケジュール/マップ</h1>
         </div>
         <div class="schedule">
-          <h3>スケジュール</h3>
-          <a class="sche" href="#">スケジュールはこちら</a>
+          <h3>スケジュール1日目</h3>
+          <div class="day-content img-wrapper">
+            <img src="image/スケジュール/IMG_1826.JPG" alt="" class="schedule-img">
+            <img src="image/スケジュール/IMG_1827.JPG" alt="" class="schedule-img pc-only">
+
+          </div>
+          <h3>スケジュール2日目</h3>
+          <div class="day-content img-wrapper">
+            <img src="image/スケジュール/IMG_1828.jpg" alt="" class="schedule-img">
+            <img src="image/スケジュール/IMG_1829.jpg" alt="" class="schedule-img pc-only">
+          </div>
+          <a class="sche" href="pdf/スケジュール.pdf">ダウンロードはこちらから</a>
         </div>
         <div class="map">
           <h3>マップ</h3>

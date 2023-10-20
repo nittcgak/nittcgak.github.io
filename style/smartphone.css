@@ -77,19 +77,23 @@
 
   .terasu-wrapper{
     display: block;
-    
+    text-align: center;
   }
 
   .terasu1{
     width: 80%;
-    padding: 20px;
-    padding-left: 100px;
+    display: inline;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding: 0px;
   }
   
   .terasu2{
     width: 80%;
-    padding: 20px;
-    padding-right: 100px;
+    display: inline;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding: 0px;
   }
 
   .modal-wrapper p{
@@ -103,5 +107,13 @@
 
   .holder-mekatoro{
     top: 120%;
+  }
+
+  .day-content{
+    display: block;
+  }
+
+  .schedule-img{
+    width:100%;
   }
 }

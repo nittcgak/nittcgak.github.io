@@ -103,6 +103,11 @@ p {
   margin: 0 auto;
 }
 
+.img-wrapper{
+  width: fit-content;
+  height: fit-content;
+}
+
 .tema {
   margin: 100px 0px;
 }
@@ -111,6 +116,10 @@ p {
   color: rgb(83, 94, 106);
   padding: 40px 40px 10px 40px;
   font-size: 40px;
+}
+
+#terasu{
+  font-size:30px;
 }
 
 .tema p {
@@ -301,6 +310,14 @@ p {
   margin-bottom: 20px;
 }
 
+.day-content{
+  display: flex;
+}
+
+.schedule-img{
+  width:50%;
+}
+
 .flyer {
   margin-bottom: 100px;
 }
@@ -313,7 +330,7 @@ p {
 
 .sche-map h3 {
   display: inline-block;
-  margin-bottom: 10px;
+  margin: 5px 0px 2px 0px;
 }
 
 .sche-map a {
