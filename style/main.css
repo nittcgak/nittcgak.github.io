@@ -67,11 +67,6 @@ a {
   width: 100%;
 }
 
-.terasu{
-  background-color: rgb(209, 244, 245);
-  z-index: 2;
-}
-
 .terasu-wrapper{
   display: flex;
 }
