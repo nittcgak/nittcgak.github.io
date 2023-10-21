@@ -62,6 +62,9 @@ a {
   font-size: 25px;
 }
 
+.top img{
+  height:auto;
+}
 
 .image-top {
   width: 100%;
@@ -292,6 +295,10 @@ p {
   text-align: center;
 }
 
+.flyer img{
+  height: auto;
+}
+
 .flyer h1 {
   color: rgb(110, 143, 179);
 }
@@ -319,6 +326,7 @@ p {
 
 .schedule-img{
   width:50%;
+  height: auto;
 }
 
 .flyer {
@@ -372,3 +380,11 @@ p {
 .bus {
   font-size: 18px;
 }
+
+#bus-h3{
+  margin-top: 20px;
+}
+
+/* .bus-contents{
+  width: 50%;
+} */
