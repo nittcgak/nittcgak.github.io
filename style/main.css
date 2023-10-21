@@ -62,14 +62,12 @@ a {
   font-size: 25px;
 }
 
+.top img{
+  height:auto;
+}
 
 .image-top {
   width: 100%;
-}
-
-.terasu{
-  background-color: rgb(209, 244, 245);
-  z-index: 2;
 }
 
 .terasu-wrapper{
@@ -259,7 +257,11 @@ p {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 30px;
+  box-shadow: 8px 8px #ccd8e9;
+  /* box-shadow: 0px 10px 10px 0px #ccc;   影指定 */
 }
+
 
 .holder {
   padding: 5px;
@@ -271,6 +273,10 @@ p {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.holder-mekatoro{
+  top: 105%;
 }
 
 .goast {
@@ -287,6 +293,10 @@ p {
 
 .flyer {
   text-align: center;
+}
+
+.flyer img{
+  height: auto;
 }
 
 .flyer h1 {
@@ -316,6 +326,7 @@ p {
 
 .schedule-img{
   width:50%;
+  height: auto;
 }
 
 .flyer {
@@ -369,3 +380,11 @@ p {
 .bus {
   font-size: 18px;
 }
+
+#bus-h3{
+  margin-top: 20px;
+}
+
+/* .bus-contents{
+  width: 50%;
+} */
