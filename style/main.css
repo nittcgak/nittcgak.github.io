@@ -385,6 +385,22 @@ p {
   margin-top: 20px;
 }
 
+.kome{
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 80%;
+  font-size: 15px;
+  text-align: left;
+}
+
+.class3{
+  color: rgb(81, 86, 246);
+}
+
+.IE{
+  color: black;
+}
+
 /* .bus-contents{
   width: 50%;
 } */
