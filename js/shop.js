@@ -13,27 +13,27 @@
       classname: '1年生',
       location:  '1年生教室',
       text: 'あるところに炎と呼ばれる者の屋敷があった。そこの家主は界といいとても温和な男だった。その性格からかその屋敷に勤める多くの臣下たちから慕われていた。そこは、幸せに満ちていた。あの日までは・・・あの日の記憶を追体験しませんか？',
-      url:"image/クラス模擬店/1年生.jpg"
+      url:"image/store/first_grade.webp"
     }, {
       classname: 'CA2',
       location: '第一体育館前道路',
       text: 'CA2はポップコーンを販売します！作り立てのポップコーンが食べられます！ぜひ食べに来てください！！お待ちしています！！！ ',
-      url:"image/クラス模擬店/CA2.jpg"
+      url:"image/store/CA2.webp"
     }, {
       classname: 'IE2',
       location: 'IE4教室',
       text: 'こんにちは!IE2ではカジノを開催します。どなたでも気軽に参加できるのでぜひ遊びに来てください！さぁ皆さん、一緒に賭け狂いましょう。 ',
-      url:"image/クラス模擬店/IE2.jpg"
+      url:"image/store/IE2.webp"
     }, {
       classname: 'ME2',
       location: '実習工場横駐車場',
       text: 'こんにちは!ME2ではフライドポテトを販売します。味付けは塩味だけでなくコンソメ味も用意しています！お腹が空いた時にも、ちょこっとしたスキマ時間にも、ぜひ気軽に食べに来てください！ ',
-      url:"image/クラス模擬店/ME2.png"
+      url:"image/store/ME2.webp"
     },{
       classname: 'CA3',
       location: 'CA3教室',
       text: 'こんにちは！CA3です。私たちは「メイド喫茶」として、ミニパンケーキとあまおうジンジャーを提供します！女の子も男の子もメイド服を着て、ご主人様・お嬢様のお帰りをお待ちしております♡ ',
-      url:"image/クラス模擬店/CA3.png"
+      url:"image/store/CA3.webp"
     },
     
     {
