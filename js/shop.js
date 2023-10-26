@@ -7,7 +7,10 @@
   const $location = document.getElementById('js-location');
   const $text = document.getElementById('js-text');
   const $modalUrl = document.getElementById('js-modal-url');
-
+  const $closeDiv = document.getElementById('js-close-div');
+  const $closeBtn = document.getElementById('js-close-btn');
+  const $modalDescription = document.getElementById('js-description');
+  const $modalLink = $modalDescription.querySelector('a');
 
   const shopExplation = [
     {
@@ -153,6 +156,16 @@
     $modal.classList.add('hidden');
   });
 
+  $closeDiv.addEventListener('click', () => {
+    $mask.classList.add('hidden');
+    $modal.classList.add('hidden');
+  });
+
+  $closeBtn.addEventListener('click', () => {
+    $mask.classList.add('hidden');
+    $modal.classList.add('hidden');
+  });
+
   //クリックされた時の挙動
   for (let i = 0; i < $link.length; i++) {
     $link[i].addEventListener('click', function (e) {
@@ -165,13 +178,11 @@
       $text.textContent = shopExplation[i].text;
       if(i==0){
         $modalUrl.classList.remove('hidden');
+        $modal.appendChild($modalLink);
         $modalUrl.href=shopExplation[i].link;
         $modalUrl.text=shopExplation[i].linkText;
       }else{
         $modalUrl.classList.add('hidden');
-      }
-      if(i==0){
-
       }
     });
   }

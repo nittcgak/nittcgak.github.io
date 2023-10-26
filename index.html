@@ -62,14 +62,17 @@
         <!-- 押された時の挙動 -->
         <div id="mask" class="hidden"></div>
         <div id="modal" class="hidden modal-wrapper">
+          <div class="close-div" id="js-close-div">
+            <span class="square_btn" id="js-close-btn"></span>
+          </div>
           <div class="push-img-wrapper">
             <img id="push-img" src="" alt="">
           </div>
-          <div class="modal-description">
+          <div class="modal-description" id="js-description">
             <p id="js-class">class</p>
             <p id="js-location">location</p>
             <p id="js-text">text</p>
-            <a id="js-modal-url"></a>
+            <a id="js-modal-url" href="#">仮置き</a>
           </div>
         </div>
         <!-- クラスの模擬店 -->
@@ -255,7 +258,7 @@
       <h1>パンフレット</h1>
       <div class="flyer-img-div">
         <a class="panp_link" href="pdf/pamphlet.pdf"><img class="cover" width=50% class="hyousi"
-                                                          src="image/cover/cover_3.webp" alt=""></a>
+            src="image/cover/cover_3.webp" alt=""></a>
       </div>
       <p class="up">↑パンフレットはこちらから</p>
     </div>
@@ -294,7 +297,7 @@
           <h3 id="bus-h3">バス</h3>
           <ul class="bus-contents">
             <li>JR徳山駅前から防長交通バス</li>
-             「久米温泉口」行に乗車、運賃260円
+            「久米温泉口」行に乗車、運賃260円
             ※運賃は異なる場合がございますので、多めの準備をお願いします
           </ul>
           <img width="100%" height="auto" src="image/bus/bus.webp" alt="" class="schedule-img">
