@@ -15,6 +15,9 @@
 
   for (let i = 0; i < $button.length; i++) {
     $button[i].addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+      });
       for(let j=0;j<$button.length;j++){
         $content[j].classList.add("hidden");
         $button[j].classList.remove("button-active");
