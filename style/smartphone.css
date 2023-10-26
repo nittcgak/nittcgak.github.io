@@ -121,4 +121,25 @@
   .schedule-img{
     width:100%;
   }
+
+  #js-modal-url{
+    font-size: 18px;
+    border-bottom: 1px dotted rgb(146, 184, 224);
+    color: #8caede;
+  }
+
+  .close-div {
+    display: block;
+    width: calc(100% + 30px);
+    /* 親要素の幅に30pxを加えた幅を設定 */
+    height: 30px;
+    /* 親要素の高さに30pxを加えた高さを設定 */
+    /* 子要素の背景色を設定 */
+    position: absolute;
+    background-color: transparent;/* 絶対位置を設定 */
+    bottom: -50px;/* 上側に15pxだけ位置を調整（親要素の高さの半分） */
+    left: -15px;
+    /* 左側に15pxだけ位置を調整（親要素の幅の半分） */
+    text-align: center;
+  }
 }

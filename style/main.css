@@ -35,7 +35,7 @@ button {
   cursor: pointer;
 }
 
-.buttons{
+.buttons {
   font-size: 18px;
 }
 
@@ -62,26 +62,26 @@ a {
   font-size: 25px;
 }
 
-.top img{
-  height:auto;
+.top img {
+  height: auto;
 }
 
 .image-top {
   width: 100%;
 }
 
-.terasu-wrapper{
+.terasu-wrapper {
   display: flex;
 }
 
-.terasu1{
+.terasu1 {
   width: 50%;
-  display:inline-flex;
+  display: inline-flex;
   padding: 20px;
   padding-left: 100px;
 }
 
-.terasu2{
+.terasu2 {
   width: 50%;
   display: inline-flex;
   padding: 20px;
@@ -101,7 +101,7 @@ p {
   margin: 0 auto;
 }
 
-.img-wrapper{
+.img-wrapper {
   width: fit-content;
   height: fit-content;
 }
@@ -116,8 +116,8 @@ p {
   font-size: 40px;
 }
 
-#terasu{
-  font-size:30px;
+#terasu {
+  font-size: 30px;
 }
 
 .tema p {
@@ -129,7 +129,7 @@ p {
   text-align: center;
 }
 
-.mogiten a{
+.mogiten a {
   border-bottom: none;
 }
 
@@ -141,7 +141,7 @@ p {
 
 }
 
-.mogi-button{
+.mogi-button {
   flex: auto;
   font-size: 25px;
   margin: 20px;
@@ -150,16 +150,16 @@ p {
 }
 
 
-.mogi-buttons{
+.mogi-buttons {
   display: flex;
   text-align: center;
 }
 
-.mogi-button-negactive{
+.mogi-button-negactive {
   opacity: 0.3;
 }
 
-.void{
+.void {
   display: inline;
   /* width: 200px; */
   width: 33%;
@@ -176,7 +176,7 @@ p {
 }
 
 #modal {
-  padding:40px 0;
+  padding: 40px 0;
   width: 70%;
   height: auto;
   border-radius: 20px;
@@ -190,31 +190,32 @@ p {
   z-index: 2;
 }
 
-.modal-wrapper p{
+.modal-wrapper p {
   font-size: 25px;
 }
 
-.modal-description{
+.modal-description {
   margin: 10px 10px 0px 10px;
 }
 
-#js-class{
+#js-class {
   margin: 0px 0px 5px 0px;
   display: inline-block;
 }
 
-#js-location{
+#js-location {
   margin: 5px 0px 10px 0px;
   display: inline-block;
   color: brown;
   font-size: 22px;
 }
 
-#push-img{
+#push-img {
   height: 200px;
 }
 
-.class-contents,.club-contents {
+.class-contents,
+.club-contents {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -275,7 +276,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.holder-mekatoro{
+.holder-mekatoro {
   top: 105%;
 }
 
@@ -295,7 +296,7 @@ p {
   text-align: center;
 }
 
-.flyer img{
+.flyer img {
   height: auto;
 }
 
@@ -320,12 +321,12 @@ p {
   margin-bottom: 20px;
 }
 
-.day-content{
+.day-content {
   display: flex;
 }
 
-.schedule-img{
-  width:50%;
+.schedule-img {
+  width: 50%;
   height: auto;
 }
 
@@ -381,11 +382,11 @@ p {
   font-size: 18px;
 }
 
-#bus-h3{
+#bus-h3 {
   margin-top: 20px;
 }
 
-.kome{
+.kome {
   margin: 0 auto;
   padding-top: 20px;
   width: 80%;
@@ -393,52 +394,75 @@ p {
   text-align: left;
 }
 
-.class3{
+.class3 {
   color: rgb(81, 86, 246);
 }
 
-.IE{
+.IE {
   color: black;
 }
 
-
+.close-div {
+  width: calc(100% + 30px);
+  /* 親要素の幅に30pxを加えた幅を設定 */
+  height: 30px;
+  /* 親要素の高さに30pxを加えた高さを設定 */
+  /* 子要素の背景色を設定 */
+  position: absolute;
+  background-color: green;
+  /* 絶対位置を設定 */
+  bottom: -50px;
+  left: -15px;
+  /* 左側に15pxだけ位置を調整（親要素の幅の半分） */
+  text-align: center;
+  display: none;
+}
 
 .square_btn {
-  right:0%;
+  right: 0%;
   top: 0%;
   display: inline-block;
   position: relative;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #333; /* 枠の調整 */
-  background: #fff; /* ボタンの背景色 */
+  width: 40px;
+  height: 40px;
+  /* 枠の調整 */
+  background: #fff;
+  /* ボタンの背景色 */
+  border-radius: 6px;
 }
- 
-.square_btn::before, .square_btn::after {
+
+.square_btn::before,
+.square_btn::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 3px; /* 棒の幅（太さ） */
-  height: 27px; /* 棒の高さ */
-  background: #333; /* バツ印の色 */
-}
- 
-.square_btn::before {
-  transform: translate(-50%,-50%) rotate(45deg);
-}
- 
-.square_btn::after {
-  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 3px;
+  /* 棒の幅（太さ） */
+  height: 37px;
+  /* 棒の高さ */
+  background: #333;
+  /* バツ印の色 */
 }
 
-.close{
+.square_btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.square_btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close {
   text-align: right;
 }
 
-.modal-all-wrapper{
-  
+#js-modal-url {
+  margin-top: 5px;
+  font-size: 25px;
+  border-bottom: 1px dotted rgb(146, 184, 224);
 }
+
 /* .bus-contents{
   width: 50%;
 } */
