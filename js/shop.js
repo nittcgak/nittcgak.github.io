@@ -135,7 +135,7 @@
       location: '実習工場横駐車場',
       text: 'こんにちは！卓球部です！私たちは揚げたこを作っています！外はカリカリ、中はトロトロで子供から大人まで喜ぶこと間違いなしです！ぜひご賞味あれ！ ',
       url: "image/club/ping_pong.webp",
-      selectLocation:"gactory"
+      selectLocation:"factory"
     }, {
       classname: '男子バスケ部',
       location: '実習工場横駐車場',
