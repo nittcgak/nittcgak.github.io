@@ -27,6 +27,7 @@
   <div id="js-main">
     <div class="top hidden" data-content="0">
       <div class="img-wrapper">
+        <div class="space"></div>
         <img width="100%" height="auto" class="image-top" src="image/cover/cover.webp" alt="a">
       </div>
       <div class="tema">
@@ -44,7 +45,7 @@
       </div>
     </div>
 
-
+    <div class="space"></div>
     <!--  模擬店 -->
     <div class="mogiten hidden" data-content="1">
       <div class="mogiten-title">
@@ -57,6 +58,15 @@
         <button class="mogi-button">部活模擬店</button>
         <div class="void"></div>
       </div>
+      <!-- セレクトボックス -->
+      <label class="selectbox-003">
+        <select id="location-select">
+            <option value="all">全て</option>
+            <option value="school-building">教室管理棟(校舎)</option>
+            <option value="factory">実習工場付近</option>
+            <option value="gym">体育館付近</option>
+        </select>
+    </label>
       <!-- 模擬店全体のdiv -->
       <div class="mogi-contents" id="js-shop-wrapper">
         <!-- 押された時の挙動 -->

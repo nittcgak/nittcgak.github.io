@@ -12,12 +12,21 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  opacity: 0.8;
   padding: 20px 0;
   background-color: rgb(82, 100, 119);
+  z-index: 100;
 }
 
 .header-bottom-space {
   height: 20px;
+}
+
+.space{
+  height: 70px;
 }
 
 .select {
@@ -260,6 +269,7 @@ p {
   height: 100%;
   border-radius: 30px;
   box-shadow: 8px 8px #ccd8e9;
+  opacity:1;
   /* box-shadow: 0px 10px 10px 0px #ccc;   影指定 */
 }
 
@@ -463,6 +473,32 @@ p {
   border-bottom: 1px dotted rgb(146, 184, 224);
 }
 
-/* .bus-contents{
-  width: 50%;
-} */
+.selectbox-003 {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.selectbox-003::after {
+  position: absolute;
+  right: 15px;
+  width: 10px;
+  height: 7px;
+  background-color: #535353;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  content: '';
+  pointer-events: none;
+}
+
+.selectbox-003 select {
+  appearance: none;
+  min-width: 230px;
+  height: 2.8em;
+  padding: .4em calc(.8em + 30px) .4em .8em;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 1em;
+  cursor: pointer;
+}
