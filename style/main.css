@@ -12,12 +12,21 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  opacity: 0.8;
   padding: 20px 0;
   background-color: rgb(82, 100, 119);
+  z-index: 100;
 }
 
 .header-bottom-space {
   height: 20px;
+}
+
+.space{
+  height: 70px;
 }
 
 .select {
