@@ -477,7 +477,6 @@ p {
   display: inline-flex;
   align-items: center;
   position: relative;
-  margin-top: 30px;
 }
 
 .selectbox-003::after {

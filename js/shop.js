@@ -213,7 +213,6 @@
 
   // <select>要素を取得
   var selectBox = document.getElementById("location-select");
-
   // セレクトボックスの変更イベントを監視
   selectBox.addEventListener("change", function () {
     // 選択されたオプションの値を取得
