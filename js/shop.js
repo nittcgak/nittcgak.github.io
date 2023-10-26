@@ -6,6 +6,7 @@
   const $class = document.getElementById('js-class');
   const $location = document.getElementById('js-location');
   const $text = document.getElementById('js-text');
+  const $modalUrl = document.getElementById('js-modal-url');
 
 
   const shopExplation = [
@@ -13,7 +14,10 @@
       classname: '1年生',
       location:  '1年生教室',
       text: 'あるところに炎と呼ばれる者の屋敷があった。そこの家主は界といいとても温和な男だった。その性格からかその屋敷に勤める多くの臣下たちから慕われていた。そこは、幸せに満ちていた。あの日までは・・・あの日の記憶を追体験しませんか？',
-      url:"image/store/first_grade.webp"
+      secondText:'',
+      url:"image/store/first_grade.webp",
+      link: "https://tct-fes.github.io/haunted-house2023/",
+      linkText:"詳しくはこちら・・・"
     }, {
       classname: 'CA2',
       location: '第一体育館前道路',
@@ -22,7 +26,7 @@
     }, {
       classname: 'IE2',
       location: 'IE4教室',
-      text: 'こんにちは!IE2ではカジノを開催します。どなたでも気軽に参加できるのでぜひ遊びに来てください！さぁ皆さん、一緒に賭け狂いましょう。 ',
+      text: 'こんにちは!IE2ではカジノを開催します。どなたでも気軽に参加できるのでぜひ遊びに来てください！さぁ皆さん、一緒に賭け狂いましょう。',
       url:"image/store/IE2.webp"
     }, {
       classname: 'ME2',
@@ -159,6 +163,16 @@
       $class.textContent = shopExplation[i].classname;
       $location.textContent = shopExplation[i].location;
       $text.textContent = shopExplation[i].text;
+      if(i==0){
+        $modalUrl.classList.remove('hidden');
+        $modalUrl.href=shopExplation[i].link;
+        $modalUrl.text=shopExplation[i].linkText;
+      }else{
+        $modalUrl.classList.add('hidden');
+      }
+      if(i==0){
+
+      }
     });
   }
 })();

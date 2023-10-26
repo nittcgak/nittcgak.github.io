@@ -436,8 +436,11 @@ p {
   text-align: right;
 }
 
-.modal-all-wrapper{
-  
+#js-modal-url{
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 25px;
+  border-bottom: 1px dotted rgb(146, 184, 224);
 }
 /* .bus-contents{
   width: 50%;
