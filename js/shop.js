@@ -1,5 +1,7 @@
 (() => {
   const $imglink = document.getElementsByClassName('shop-a');
+  const $holder = document.getElementsByClassName('holder');
+  console.log($holder);
   const $mask = document.getElementById('mask');
   const $modal = document.getElementById('modal');
   const $img = document.getElementById('push-img');
@@ -222,7 +224,8 @@
       case "all":
         for (let j = 0; j < $imglink.length; j++) {
           const $imgElement = $imglink[j].querySelector('img');
-          $imgElement.style.opacity = 1; // 透明度を0.3に設定
+          $imgElement.style.opacity = 1; 
+          $holder[j].style.opacity = 1;
         }
         break;
       case "school-building":
@@ -230,8 +233,10 @@
           const $imgElement = $imglink[j].querySelector('img');
           if(shopExplation[j].selectLocation==="school-building"){
             $imgElement.style.opacity = 1;
+            $holder[j].style.opacity = 1;
           }else{
-          $imgElement.style.opacity = 0.2; // 透明度を0.3に設定
+          $imgElement.style.opacity = 0.1; 
+          $holder[j].style.opacity = 0.1;
           }
         }
         break;
@@ -240,8 +245,10 @@
           const $imgElement = $imglink[j].querySelector('img');
           if(shopExplation[j].selectLocation==="factory"){
             $imgElement.style.opacity = 1;
+            $holder[j].style.opacity = 1;
           }else{
-          $imgElement.style.opacity = 0.2; // 透明度を0.3に設定
+          $imgElement.style.opacity = 0.1; 
+          $holder[j].style.opacity = 0.1;
           }
         }
         break;
@@ -250,8 +257,10 @@
           const $imgElement = $imglink[j].querySelector('img');
           if(shopExplation[j].selectLocation==="gym"){
             $imgElement.style.opacity = 1;
+            $holder[j].style.opacity = 1;
           }else{
-          $imgElement.style.opacity = 0.2; // 透明度を0.3に設定
+          $imgElement.style.opacity = 0.1; 
+          $holder[j].style.opacity = 0.1;
           }
         }
         break;
