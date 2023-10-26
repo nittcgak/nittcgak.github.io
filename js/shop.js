@@ -1,7 +1,6 @@
 (() => {
   const $imglink = document.getElementsByClassName('shop-a');
   const $holder = document.getElementsByClassName('holder');
-  console.log($holder);
   const $mask = document.getElementById('mask');
   const $modal = document.getElementById('modal');
   const $img = document.getElementById('push-img');
