@@ -16,7 +16,7 @@
   const shopExplation = [
     {
       classname: '1年生',
-      location: '1年生教室',
+      location: '1年生教室(教室管理棟2F)',
       text: 'あるところに炎と呼ばれる者の屋敷があった。そこの家主は界といいとても温和な男だった。その性格からかその屋敷に勤める多くの臣下たちから慕われていた。そこは、幸せに満ちていた。あの日までは・・・あの日の記憶を追体験しませんか？',
       secondText: '',
       url: "image/store/first_grade.webp",
@@ -31,7 +31,7 @@
       selectLocation:"gym"
     }, {
       classname: 'IE2',
-      location: 'IE4教室',
+      location: 'IE4教室(教室管理棟3F)',
       text: 'こんにちは!IE2ではカジノを開催します。どなたでも気軽に参加できるのでぜひ遊びに来てください！さぁ皆さん、一緒に賭け狂いましょう。',
       url: "image/store/IE2.webp",
       selectLocation:"school-building"
@@ -43,7 +43,7 @@
       selectLocation:"factory"
     }, {
       classname: 'CA3',
-      location: 'CA3教室',
+      location: 'CA3教室(教室管理棟3F)',
       text: 'こんにちは！CA3です。私たちは「メイド喫茶」として、ミニパンケーキとあまおうジンジャーを提供します！女の子も男の子もメイド服を着て、ご主人様・お嬢様のお帰りをお待ちしております♡ ',
       url: "image/store/CA3.webp",
       selectLocation:"school-building"
@@ -67,7 +67,7 @@
       selectLocation:"gym"
     }, {
       classname: 'IE4',
-      location: '第1パソコン室',
+      location: '第1パソコン室(教室管理棟1F,  正面玄関から左へ進み、突き当たりの教室)',
       text: 'IE4です！情報処理センターでアプリ展示とプログラミング講座をやっています。プログラミング初心者の方も上級者の方もそれぞれにあったレベルを選択することが出来ます。ぜひ来てください！ ',
       url: "image/store/IE4.webp",
       selectLocation:"school-building"
@@ -79,7 +79,7 @@
       selectLocation:"gym"
     }, {
       classname: 'IE企画',
-      location: 'ICT教室',
+      location: 'ICT教室(教室管理棟1F)',
       text: '情報電子工学科がお送りする至高の謎解き体験。高専祭の企画各所を回りつつ参加可能！ 「謎解き工学科への入学試験」君は全ての謎を解き明かし、合格できるか。  〜〜参加無料。ICT 教室で謎解きキット配付中 ',
       url: "image/store/IE_event.webp",
       selectLocation:"school-building"
@@ -115,13 +115,13 @@
       selectLocation:"gym"
     }, {
       classname: '園芸同好会',
-      location: '学生談話室',
+      location: '学生談話室(教室管理棟1F)',
       text: '今年は過去の花壇の写真展示をします。高専祭の時期では見ることができない花壇の写真も展示しています。ぜひお越しください。 ',
       url: "image/club/garden.webp",
       selectLocation:"school-building"
     }, {
       classname: '写真部',
-      location: '学生談話室',
+      location: '学生談話室(教室管理棟1F)',
       text: '写真部では作品展示会を行います。いろいろな視点で撮影した個性あふれる写真をお楽しみください。投票も行いますので、ぜひご参加ください。 ',
       url: "image/club/picture.webp",
       selectLocation:"school-building"
@@ -145,31 +145,31 @@
       selectLocation:"factory"
     }, {
       classname: '伝統文化同好会',
-      location: '学生談話室',
+      location: '学生談話室(教室管理棟1F)',
       text: '私たち伝統文化同好会は、談話室に生け花作品を展示しています。部員一人ひとりが生けた、柵にとらわれない自由な作品となっております。今日まで受け継がれてきた日本文化の1つである｢生け花｣をぜひご覧ください。 ',
       url: "image/club/culture.webp",
       selectLocation:"school-building"
     }, {
       classname: '美術部',
-      location: '学生談話室',
+      location: '学生談話室(教室管理棟1F)',
       text: '美術部では今年も部員の絵を展示いたします。デジタルや油絵、大きいものから小さいものまで様々な絵を用意いていますので、是非ご覧ください。 ',
       url: "image/club/art.webp",
       selectLocation:"school-building"
     }, {
       classname: '文芸部',
-      location: '学生談話室',
+      location: '学生談話室(教室管理棟1F)',
       text: 'どうも！文芸部です。文芸部では文芸誌の配布を行います。 無料配布になるのでご自由にお持ちください。かなり自由に書かれた物語が入っています。 難し気なものではないので気楽にお読みください！ ',
       url: "image/club/garden.webp",
       selectLocation:"school-building"
     }, {
       classname: '茶道部',
-      location: '小会議室1',
+      location: '小会議室1(教室管理棟1F)',
       text: 'こんにちは！茶道部です。私達はお茶会をしています。 作法を知らなくても気軽に参加していただけます。 無料で美味しい和菓子とお抹茶を用意していますので、ぜひお越しください♪ ',
       url: "image/club/tea.webp",
       selectLocation:"school-building"
     }, {
       classname: 'メカトロシステム部',
-      location: '談話室前',
+      location: '談話室前(教室管理棟1F)',
       text: 'こんにちは！メカトロシステム部はクレーンゲーム、射的、風船割りの出店をします。クレーンゲームはメカトロシステム部が 1 から製作したものです。興味のある方はぜひ来てください！ ',
       url: "image/club/meca.webp",
       selectLocation:"school-building"
