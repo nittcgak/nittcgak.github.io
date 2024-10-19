@@ -2,322 +2,136 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="第49回徳山高専高専祭HP">
-  <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
-  <title>第49回　徳山高専高専祭</title>
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/smartphone.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>高専祭HP</title>
 </head>
 
 <body>
-  <header>
-    <div class="select">
-      <button class="buttons" id="button1">ホーム</button>
-      <button class="buttons" id="button2">模擬店</button>
-      <button class="buttons" id="button3">パンフレット</button>
-      <button class="buttons" id="button4">スケジュール/マップ</button>
-    </div>
-  </header>
-  <div class="header-bottom-space" id="header-space"></div>
-  <div id="js-main">
-    <div class="top hidden" data-content="0">
-      <div class="img-wrapper">
-        <div class="space"></div>
-        <img width="100%" height="auto" class="image-top" src="image/cover/cover.webp" alt="a">
-      </div>
-      <div class="tema">
-        <h1>さぁ、行こう!</h1>
-        <p>これはWBCで日本チームが掛け声として使っていた言葉です。彼らのようにみんなで一つになってこの高専祭を成功させよう！という意味を込めています。また「最高！」とかけて最高の高専祭にしようという意味も込められています。
+
+
+
+    <header class="mobile">
+        <div class="wrapper">
+            <button class="btn-menu">+</button>
+            <ul class="main-nav"> <!-- 各エリアにつけたID名を読み込むことで、それぞれに移動できる -->
+                <li onclick="showPage('home')"><a>ホーム</a></li>
+                <li onclick="showPage('shops')"><a>模擬店</a></li>
+                <li onclick="showPage('pamphlet')"><a>パンフレット</a></li>
+                <li onclick="showPage('live')"><a>お笑いライブ</a></li>
+                <li onclick="showPage('others')"><a>お知らせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <header_desktop class="include desktop">
+        <ul> <!-- 各エリアにつけたID名を読み込むことで、それぞれに移動できる -->
+            <li onclick="showPage('home')"><a>ホーム</a></li>
+            <li onclick="showPage('shops')"><a>模擬店</a></li>
+            <li onclick="showPage('pamphlet')"><a>パンフレット</a></li>
+            <li onclick="showPage('live')"><a>お笑いライブ</a></li>
+            <li onclick="showPage('others')"><a>お知らせ</a></li>
+        </ul>
+    </header_desktop>
+
+
+
+    <section id="home" class="page active">
+        <div class="text">
+            <h1>徳山高専創立50周年記念 <br>第50回高専祭</h1>
+            <p class="date">2024 10.26 - 10.27</p><br>
+        </div>
+    </section>
+
+
+
+
+    <section id="shops" class="page">
+        <h1>クラス模擬店</h1>
+        <h3>全体図</h3>
+        <img src="image/map_second_first.png" class="mobile"><br><br>
+        <img src="image/map_first.jpg" class="desktop">
+        <img src="image/map_first_first.png" class="mobile">
+        <p>教室管理棟一階では、主に体験型の講座を中心に企画しています！ICT教室では、校舎をめぐっての謎解きが体験できます。談話室の総合文化部による作品展示、巨大クレーンゲームなどがあります！クレーンゲームは毎年大人気ですので、今年もいかがですか？
+        </p><br>
+        <img src="image/map_first_second.png" class="mobile">
+        <p>教室管理棟2階では、一年生教室でお化け屋敷を行います。毎年恒例のこの企画ですが、果たして今年はどれほど怖いのか...。残暑も吹き飛ぶような、ちょっぴり肌寒い体験はいかがですか？</p><br>
+
+
+        <img src="image/map_second.png" class="desktop">
+        <img src="image/map_second_second.png" class="mobile">
+        <p>体育館付近では、各学科・各部活動の出店を出しています！うどんやカレーなどガッツリ食べたいものから、焼き鳥屋ポテトなど、気軽に食べられるものまで揃えています。校区内は基本的に食べ歩きOKなので、美味しそうなものがあれば気軽に立ち寄ってください！
         </p>
-        <!-- テラス計画 -->
-        <div class="terasu">
-          <h1 id="terasu">テラス企画</h1>
-          <div class="terasu-wrapper img-wrapper">
-            <img width="100%" height="auto" src="image/terrace/terrace_1.webp" alt="" class="terasu1">
-            <img width="100%" height="auto" src="image/terrace/terrace_2.webp" alt="" class="terasu2">
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="space"></div>
-    <!--  模擬店 -->
-    <div class="mogiten hidden" data-content="1">
-      <div class="mogiten-title">
-        <h1>模擬店</h1>
-      </div>
-      <!-- ボタン -->
-      <div class="mogi-buttons">
-        <div class="void"></div>
-        <button class="mogi-button">クラス模擬店</button>
-        <button class="mogi-button">部活模擬店</button>
-        <div class="void"></div>
-      </div>
-      <!-- セレクトボックス -->
-      <label class="selectbox-003">
-        <select id="location-select">
-            <option value="all">全て</option>
-            <option value="school-building">教室管理棟(校舎)</option>
-            <option value="factory">実習工場付近</option>
-            <option value="gym">体育館付近</option>
-        </select>
-    </label>
-      <!-- 模擬店全体のdiv -->
-      <div class="mogi-contents" id="js-shop-wrapper">
-        <!-- 押された時の挙動 -->
-        <div id="mask" class="hidden"></div>
-        <div id="modal" class="hidden modal-wrapper">
-          <div class="close-div" id="js-close-div">
-            <span class="square_btn" id="js-close-btn"></span>
-          </div>
-          <div class="push-img-wrapper">
-            <img id="push-img" src="" alt="">
-          </div>
-          <div class="modal-description" id="js-description">
-            <p id="js-class">class</p>
-            <p id="js-location">location</p>
-            <p id="js-text">text</p>
-            <a id="js-modal-url" href="#">仮置き</a>
-          </div>
-        </div>
-        <!-- クラスの模擬店 -->
-        <div class="class-wrapper hidden js-mogi-wrapper">
-          <div class="class-contents js-mogi-contents">
-            <div class="class-mogi">
 
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img class="goast" src="image/store/first_grade.webp" alt="">
-              </a>
-              <div class="holder">一年生</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/CA2.webp" alt="">
-              </a>
-              <div class="holder">CA2</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/IE2.webp" alt="">
-              </a>
-              <div class="holder">IE2</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/ME2.webp" alt="">
-              </a>
-              <div class="holder">ME2</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/CA3.webp" alt="">
-              </a>
-              <div class="holder">CA3</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/IE3_solt.webp" alt="">
-              </a>
-              <div class="holder">IE3</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/ME3.webp" alt="">
-              </a>
-              <div class="holder">ME3</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/CA4.webp" alt="">
-              </a>
-              <div class="holder">CA4</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/IE4.webp" alt="">
-              </a>
-              <div class="holder">IE4</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/IE5.webp" alt="">
-              </a>
-              <div class="holder">IE5</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/IE_event.webp" alt="">
-              </a>
-              <div class="holder">IE企画</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/store/ME_event.webp" alt="">
-              </a>
-              <div class="holder">ME企画</div>
-            </div>
-            <!-- 空クラス -->
-            <!-- <div class="shop pc-only"></div>
-            <div class="shop pc-only"></div>ï -->
-          </div>
-        </div>
-        <!-- 部活の模擬店 -->
-        <div class="club-wrapper hidden js-mogi-wrapper">
-          <div class="club-contents hidden js-mogi-contents">
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/soccer.webp" alt="">
-              </a>
-              <div class="holder">サッカー部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/terrace.webp" alt="">
-              </a>
-              <div class="holder">テラス計画</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/new_media.webp" alt="">
-              </a>
-              <div class="holder shift">ニューメディア部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/badminton.webp" alt="">
-              </a>
-              <div class="holder shift">バドミントン部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/garden.webp" alt="">
-              </a>
-              <div class="holder">園芸同好会</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/picture.webp" alt="">
-              </a>
-              <div class="holder">写真部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/brass_band_1.webp" alt="">
-              </a>
-              <div class="holder">吹奏楽部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/ping_pong.webp" alt="">
-              </a>
-              <div class="holder">卓球部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/bascket.webp" alt="">
-              </a>
-              <div class="holder">男子バスケ部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/culture.webp" alt="">
-              </a>
-              <div class="holder shift">伝統文化同好会</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/art.webp" alt="">
-              </a>
-              <div class="holder">美術部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/literature.webp" alt="">
-              </a>
-              <div class="holder">文芸部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/tea.webp" alt="">
-              </a>
-              <div class="holder">茶道部</div>
-            </div>
-            <div class="shop">
-              <a href="" class="shop-a">
-                <img src="image/club/meca.webp" alt="">
-              </a>
-              <div class="holder holder-mekatoro">メカトロシステム部</div>
-            </div>
-            <!-- 空クラス -->
-            <div class="shop pc-only"></div>
-            <div class="shop pc-only"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <class_contents_profit class="profit">
 
-    <!-- パンフレット -->
-    <div class="flyer hidden" data-content="2">
-      <h1>パンフレット</h1>
-      <div class="flyer-img-div">
-        <a class="panp_link" href="pdf/pamphlet.pdf"><img class="cover" width=50% class="hyousi"
-            src="image/cover/cover_3.webp" alt=""></a>
-      </div>
-      <p class="up">↑パンフレットはこちらから</p>
-    </div>
 
-    <!-- スケジュールとマップ -->
-    <div class="sche-map hidden" data-content="3">
-      <div class="container">
-        <div class="sche-map-title">
-          <h1>スケジュール/マップ</h1>
-        </div>
-        <div class="schedule">
-          <h3>スケジュール1日目</h3>
-          <div class="day-content img-wrapper">
-            <img width="100%" height="auto" src="image/schedule/28.webp" alt="" class="schedule-img">
-            <img width="100%" height="auto" src="image/schedule/28_stage.webp" alt="" class="schedule-img pc-only">
 
-          </div>
-          <h3>スケジュール2日目</h3>
-          <div class="day-content img-wrapper">
-            <img width="100%" height="auto" src="image/schedule/29.webp" alt="" class="schedule-img">
-            <img width="100%" height="auto" src="image/schedule/29_stage.webp" alt="" class="schedule-img pc-only">
-          </div>
-          <a class="sche" href="pdf/schedule.pdf">ダウンロードはこちら</a>
-        </div>
-        <!-- マップ -->
-        <div class="map">
-          <h3>マップ</h3>
-          <div class="day-content">
-            <img width="100%" height="auto" src="image/map/map1.webp" alt="" class="schedule-img">
-            <img width="100%" height="auto" src="image/map/map2.webp" alt="" class="schedule-img">
-          </div>
-          <a class="all" href="pdf/map_1.pdf">ダウンロードはこちら</a>
-          <!-- <a class="in_school" href="#">校内マップはこちら</a> -->
-        </div>
-        <div class="bus">
-          <h3 id="bus-h3">バス</h3>
-          <ul class="bus-contents">
-            <li>JR徳山駅前から防長交通バス</li>
-            「久米温泉口」行に乗車、運賃260円
-            ※運賃は異なる場合がございますので、多めの準備をお願いします
-          </ul>
-          <img width="100%" height="auto" src="image/bus/bus.webp" alt="" class="schedule-img">
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/button.js"></script>
-  <script src="js/mogi-button.js"></script>
-  <script src="js/shop.js"></script>
+            </class_contents>
+
+
+
+    </section>
+
+    <section id="pamphlet" class="page">
+        <a href="image/pamphlet.pdf">パンフレットの閲覧はこちらから！</a>
+    </section>
+
+    <section id="others" class="page">
+        <h2>お知らせ</h2>
+        <table class="othres-table">
+
+            <tr>
+                <td class="others-content">
+                    <h4>バスについて</h4>
+                    (高専発着の時刻表は<a class="grid-gallery" href="image/basu_time.png" data-aos="fade-up">
+                        <img class="grid-item">こちら</a>)<br>
+                    当日は防長バスの便を追加いたします。運行スケジュールは以下の通りです。<br><br>
+                    <ul>
+                        <li>下松駅(7:45)→櫛ヶ浜駅(8:05)→徳山高専(8:16)<br></li>
+                        <li>徳山駅前(8:10)→(球場経由)→徳山高専(8:27)<br>
+                        <li>徳山駅前(8:30)→徳山高専(8:50)→久米温泉口(8:57)<br>
+                        <li>徳山駅前(8:35)→(桜木経由)→徳山高専(8:52)<br>
+                        <li>徳山駅前(12:15)→徳山高専(12:35)→久米温泉口(12:42)<br>
+                        <li>徳山高専(16:25)→(桜木経由)→徳山駅(16:42)<br>
+                    </ul>
+                    <br>バスは校内のバス停（徳山高専）まで入ります。<br>バスの乗車人数に限りがあるため、乗り切れない可能性がございます。その場合は、他の交通機関の利用をお願いします。<br>
+                    また、今年はシャトルバスの運行は行いません。あらかじめご了承ください。
+                </td>
+                <br><br>
+            </tr>
+
+
+        </table>
+
+    </section>
+
+    <section id="live" class="page">
+        <table class="live-table">
+
+            <tr>
+                <td class="live-content">
+                    <h4>お笑いライブについて</h4><br>
+                    今年は徳山高専創立50周年ということで、特別企画として芸人のきつねさんをお呼びしてお笑いライブを開催します! <br>
+                高専祭を盛り上げたい、学外の方々に多く来場していただき、徳山高専の魅力を伝えたいという思いで企画しました。
+                当日のステージでは、きつねさんによるお笑いライブ、「イライラ棒」体験コーナーを予定しています。<br>
+                最後には会場全体で記念撮影をする予定です。
+                日時は10月27日(日)15:30～16:00（15:00開場）、場所は第一体育館です。参加を希望する方は下記のQRコードから申し込みをお願いします。（10月24日(木)12:00締切） <br>
+                申し込み多数の場合は抽選を行い、抽選結果は10月25日(金)12時頃に、申し込みを行ったメールアドレス宛に通知します。<br>
+                <img src="image/qrCode.png">
+                </td>
+                
+            </tr>
+        </table>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
