@@ -1,0 +1,106 @@
+@media screen and (max-height: 700px){
+  h1{
+    font-size: 30px;
+  }
+
+  .tema{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  p{
+    font-size: 20px;
+    width:80%;
+  }
+
+  .buttons{
+    font-size: 12px;
+  }
+
+  .tema p{
+    padding:10px 0px 50px 0px;
+    margin-bottom: 0px;
+  }
+
+  .flyer-img{
+    width: 60%;
+  }
+  
+  .cover{
+    width: 70%;
+  }
+
+  .shop{
+    width: 50%;
+    height: 160px;
+  }
+  .pc-only{
+    display: none;
+  }
+
+  .mogi-button{
+    width: 30%;
+    font-size: 18px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+
+  .void{
+    width: 20%;
+  }
+
+  .shop{
+    margin-bottom: 50px;
+  }
+
+  .holder{
+    top:110%;
+  }
+
+  #js-class{
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+  #js-location{
+    font-size: 13px;
+  }
+
+  #js-text{
+    font-size: 15px;
+  }
+
+  #modal{
+    width: 90%;
+    padding: 7% 0;
+  }
+
+  .terasu-wrapper{
+    display: block;
+  }
+
+  .terasu1{
+    width: 80%;
+    padding: 20px;
+    padding-left: 100px;
+  }
+  
+  .terasu2{
+    width: 80%;
+    padding: 20px;
+    padding-right: 100px;
+  }
+
+  .modal-wrapper p{
+    width: 100%;
+    font-size: 25px;
+  }
+
+  #push-img{
+    height: 150px;
+  }
+
+  .holder-mekatoro{
+    top: 120%;
+  }
+}
