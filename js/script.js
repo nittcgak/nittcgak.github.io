@@ -17,5 +17,5 @@ function showPage(pageId) {
 
   // クリックされたページを表示する
   (document.getElementById(pageId)).classList.add('active');
-  console.log(pages);
+  nav.classList.toggle('open-menu');
 }
